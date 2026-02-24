@@ -114,24 +114,63 @@ def cmd_login():
 
 def cmd_inbox(count=10):
     token = get_token()
+
+    # Fetch inbox
     data = api_get("/me/messages", token, params={
         "$top": count,
         "$orderby": "receivedDateTime desc",
         "$select": "id,subject,from,receivedDateTime,isRead,bodyPreview"
     })
-
     msgs = data.get('value', [])
+
+    # Fetch sent items
+    try:
+        sent = api_get("/me/mailFolders/sentitems/messages", token, params={
+            "$top": count,
+            "$orderby": "sentDateTime desc",
+            "$select": "id,subject,from,toRecipients,receivedDateTime,isRead,bodyPreview"
+        })
+        sent_msgs = sent.get('value', [])
+        for m in sent_msgs:
+            m['_sent'] = True
+        msgs.extend(sent_msgs)
+    except Exception:
+        pass
+
+    # Fetch deleted items
+    try:
+        deleted = api_get("/me/mailFolders/deleteditems/messages", token, params={
+            "$top": count,
+            "$orderby": "receivedDateTime desc",
+            "$select": "id,subject,from,receivedDateTime,isRead,bodyPreview"
+        })
+        deleted_msgs = deleted.get('value', [])
+        for m in deleted_msgs:
+            m['_deleted'] = True
+        msgs.extend(deleted_msgs)
+    except Exception:
+        pass
+
     if not msgs:
         print("Ingen e-poster funnet.")
         return
+
+    # Sort all by date descending and take top N
+    msgs.sort(key=lambda m: m.get('receivedDateTime', ''), reverse=True)
+    msgs = msgs[:count]
 
     print(f"\n{'#':>3}  {'Dato':10}  {'Fra':30}  {'Emne'}")
     print("-" * 90)
     for i, m in enumerate(msgs, 1):
         date = m['receivedDateTime'][:10]
         sender = m.get('from', {}).get('emailAddress', {}).get('name', 'Ukjent')[:30]
-        subj = m.get('subject', '(ingen emne)')[:50]
-        read_mark = " " if m.get('isRead') else "*"
+        tag = ""
+        if m.get('_sent'):
+            tag = " [SENDT]"
+        elif m.get('_deleted'):
+            tag = " [SLETTET]"
+        subj = m.get('subject', '(ingen emne)')[:50 - len(tag)] + tag
+        read_mark = " " if m.get('isRead') or m.get('_sent') else "*"
         print(f"{i:>3}{read_mark} {date}  {sender:30}  {subj}")
 
     print(f"\nBruk 'read <nr>' for å lese en e-post (f.eks. 'read 1')")
@@ -240,6 +279,20 @@ def cmd_search(query, count=20):
     })
     msgs = data.get('value', [])
 
+    # Also search sent items
+    try:
+        sent = api_get("/me/mailFolders/sentitems/messages", token, params={
+            "$search": f'"{query}"',
+            "$top": count,
+            "$select": "id,subject,from,toRecipients,receivedDateTime,bodyPreview"
+        })
+        sent_msgs = sent.get('value', [])
+        for m in sent_msgs:
+            m['_sent'] = True
+        msgs.extend(sent_msgs)
+    except Exception:
+        pass  # Sent items search may not be available
+
     # Also search deleted items
     try:
         deleted = api_get("/me/mailFolders/deleteditems/messages", token, params={
@@ -261,14 +314,18 @@ def cmd_search(query, count=20):
     # Sort by date descending
     msgs.sort(key=lambda m: m.get('receivedDateTime', ''), reverse=True)
 
-    print(f"\nSøk: \"{query}\" — {len(msgs)} treff (inkl. slettede)\n")
+    print(f"\nSøk: \"{query}\" — {len(msgs)} treff (innboks, sendt, slettet)\n")
     print(f"{'#':>3}  {'Dato':10}  {'Fra':30}  {'Emne'}")
     print("-" * 90)
     for i, m in enumerate(msgs, 1):
         date = m['receivedDateTime'][:10]
         sender = m.get('from', {}).get('emailAddress', {}).get('name', 'Ukjent')[:30]
-        deleted_tag = " [SLETTET]" if m.get('_deleted') else ""
-        subj = m.get('subject', '(ingen emne)')[:50 - len(deleted_tag)] + deleted_tag
+        tag = ""
+        if m.get('_sent'):
+            tag = " [SENDT]"
+        elif m.get('_deleted'):
+            tag = " [SLETTET]"
+        subj = m.get('subject', '(ingen emne)')[:50 - len(tag)] + tag
         print(f"{i:>3}  {date}  {sender:30}  {subj}")
 
     id_map = {str(i): m['id'] for i, m in enumerate(msgs, 1)}
