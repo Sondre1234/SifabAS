@@ -22,7 +22,8 @@ This repository is the operational backbone for SifabAS, structured around **AI 
   /process                 — Process engineering
   /structural              — Structural engineering
   /metering                — Metering specialist/engineering
-  /quality-management      — ISO 9001 QMS & B.SI.01.07 document control
+  /quality-management      — ISO 9001 QMS enforcement & B.SI.01.07 document control
+  /iso-document-producer   — Authors all internal ISO 9001 documents, procedures, and forms
   /email                   — Email drafting, parsing, and routing
   /customer-followup       — Customer relationship & follow-up
 /projects                  — Active and archived project folders
@@ -32,6 +33,7 @@ This repository is the operational backbone for SifabAS, structured around **AI 
   /rfq                     — Requests for quotation (incoming and outgoing)
   /reports                 — Engineering reports and deliverables
   /drawings                — P&IDs, layout drawings, isometrics, etc.
+  /iso                     — ISO 9001 QMS documents (manual, procedures, forms, records)
 /email                     — Email templates, logs, and drafts
 /customers                 — Customer profiles, contact lists, history
 ```
@@ -51,8 +53,9 @@ Agents operate in a hub-and-spoke model:
 
 1. **Project Manager** is the hub — coordinates scope, schedule, and cross-discipline interfaces.
 2. **Quality Management Agent** enforces ISO 9001 QMS and B.SI.01.07 document handling across all deliverables.
-3. **Discipline agents** (Instrumentation, Process, Structural, Metering, HSE) produce and review engineering deliverables.
-4. **Email Agent** handles all external communication drafting and parsing.
-5. **Customer Follow-up Agent** tracks commitments, deadlines, and satisfaction.
+3. **ISO Document Producer Agent** authors and maintains all internal QMS documents, procedures, forms, and templates.
+4. **Discipline agents** (Instrumentation, Process, Structural, Metering, HSE) produce and review engineering deliverables.
+5. **Email Agent** handles all external communication drafting and parsing.
+6. **Customer Follow-up Agent** tracks commitments, deadlines, and satisfaction.
 
 When working on a task, always check the relevant `AGENT.md` for the agent's scope, required standards, and expected output formats.
