@@ -44,7 +44,7 @@ This repository is the operational backbone for SifabAS, structured around **AI 
 
 ## Key Conventions
 
-- **Language**: Project documents and customer-facing material are in **Norwegian (Bokmål)** unless the customer requests English. Internal agent instructions and this repository's markdown files are in English.
+- **Language**: All documents, correspondence, and written output must be in **English**. No Norwegian in written material.
 - **Standards referencing**: Always cite the specific Norsok standard clause (e.g., "Norsok S-001 §6.3") when making engineering decisions or recommendations.
 - **Document handling**: All project document management follows SifabAS procedure **B.SI.01.07** (Procedure for Document Handling). This is the standard procedure used by human project managers when running projects.
 - **Document numbering**: Follow the convention `[ProjectID]-[Discipline]-[DocType]-[SeqNo]` (e.g., `P2024-IA-REP-001`).
