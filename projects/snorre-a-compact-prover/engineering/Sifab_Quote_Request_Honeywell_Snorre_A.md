@@ -26,8 +26,8 @@ Sifab AS requests a firm quotation from Honeywell for the supply of a Small Volu
 |---|------|---------------|
 | 1 | Small Volume Prover (SVP) | Sized for 67–750 m³/h crude oil USM proving, ≤0.020% repeatability per API MPMS 4.2 |
 | 2 | SVP Controller | Complete with interface for flow computer integration |
-| 3 | Seraphin Can | Certified by Justervesenet, in SS316 protective cabinet for offshore storage |
-| 4 | Water Draw Kit | Solenoid valve and manual instrument valves |
+
+**Note:** Seraphin Can and Water Draw Kit are Sifab scope — sourced separately. Honeywell to advise recommended Seraphin can volume for the selected SVP model.
 
 ### 2.2 Modular Split Engineering (CRITICAL)
 The SVP must be split into transportable modules for installation on Snorre A. This is the key engineering challenge.
@@ -204,15 +204,15 @@ Based on the flow rate requirement of 67–750 m³/h for ultrasonic meter provin
 Please provide the quotation with the following breakdown:
 
 1. **SVP unit price** (including controller, factory testing, documentation)
-2. **Seraphin can + SS316 cabinet** (including Justervesenet certification)
-3. **Water draw kit**
-4. **Modular split engineering** (additional to standard SVP)
-5. **Disassembly, packing, and shipping** (onshore Norway)
-6. **Re-assembly on Snorre A** (offshore labor, travel, accommodation)
-7. **Site Acceptance Test** (water draw on Snorre A)
-8. **Option: 2-year spare parts**
-9. **Delivery time** (weeks from order)
-10. **Validity** of quotation
+2. **Modular split engineering** (additional to standard SVP)
+3. **Disassembly, packing, and shipping** (onshore Norway)
+4. **Re-assembly on Snorre A** (offshore labor, travel, accommodation)
+5. **Site Acceptance Test** (water draw on Snorre A)
+6. **Option: 2-year spare parts**
+7. **Delivery time** (weeks from order)
+8. **Validity** of quotation
+
+**Note:** Seraphin can and water draw kit are sourced separately by Sifab. Please advise recommended Seraphin can volume so we can order from our supplier.
 
 ---
 
