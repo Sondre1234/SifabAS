@@ -10,12 +10,21 @@ desktop.ini
 *.swo
 
 # Sensitive
-*.env
+.env
 .env.*
+*.env
 credentials/
 secrets/
+.token_cache.json
+.last_inbox.json
+
+# Downloads
+downloads/
 
 # Temp
 *.tmp
 *.bak
 ~$*
+
+# Generated PDFs
+documents/iso/*.pdf
