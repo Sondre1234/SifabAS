@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "WebFetch(domain:www.sifab.no)",
+      "WebFetch(domain:sifab.no)",
+      "Bash(npx:*)",
+      "Bash(head:*)",
+      "Bash(cat:*)",
+      "Bash(py -m pip install:*)",
+      "Bash(py -u tools/email_client.py read:*)",
+      "Bash(py -u tools/email_client.py search:*)",
+      "Bash(py -u tools/email_client.py:*)",
+      "Bash(py -c:*)",
+      "Bash(find C:\\\\Users\\\\SondreFalch\\\\OneDrive - Sifab AS\\\\Dokumenter - Felles\\\\Zigma360\\\\Projects\\\\SP-00525 and SP-00577 Prover NOA og Valhall Fenris\\\\02 Tilbud:*)",
+      "Bash(py:*)"
+    ]
+  }
+}
