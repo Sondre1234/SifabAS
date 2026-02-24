@@ -4,9 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## About SifabAS
 
-SifabAS is a Norwegian engineering services company specializing in oil & gas, energy, and industrial projects governed by **Norsok standards**. The company delivers multidisciplinary engineering — instrumentation & automation, process, structural, HSE/HMS, and metering — with integrated project management and customer follow-up.
+Sifab AS is a specialized supplier in the Norwegian energy market, located in Sandnes (Stavanger region). The company delivers flow metering solutions (fiscal, custody transfer, process), automatic tank gauging (Honeywell Enraf), volume provers & spheres, wave monitoring (Radac), and Norsok-compliant skid fabrication & special items (SI) for offshore and onshore installations.
 
-SifabAS is **ISO 9001 certified**. All work must comply with the company's quality management system, relevant Norsok standards (S-001, S-002, I-001, I-002, Z-001, Z-008, Z-015, R-003, etc.), and applicable Norwegian regulations (Petroleumstilsynet / PSA, Arbeidstilsynet, DSB).
+Sifab AS is an authorized channel partner for Honeywell, Faure Herman, McCrometer, Maloney, GFSA, and Emerson. The team has extensive experience in design, materials, welding, coating, and machining for offshore product manufacturing.
+
+Sifab AS is **ISO 9001 certified** and compliant with **PED**, **TR 2000**, and **Norsok** standards. All work must comply with the company's quality management system (B.SI.xx.xx procedure series), relevant Norsok standards (S-001, S-002, I-001, I-002, I-104, Z-001, Z-008, Z-015, R-003, etc.), and applicable Norwegian regulations (Petroleumstilsynet / PSA, Arbeidstilsynet, DSB, NPD/OD).
+
+**Website:** [www.sifab.no](https://www.sifab.no)
 
 ## Repository Purpose
 
