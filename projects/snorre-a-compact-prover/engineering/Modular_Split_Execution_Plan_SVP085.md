@@ -75,16 +75,20 @@ The Hugin A and Valhall provers were installed during platform construction or t
 
 ## 3. Transport Orientation — Flip and Roll
 
-### 3.1 Key Insight: Rotate 90° to Pass Through Door
+### 3.1 Key Insight: Different Strategy per Module Type
 
-The SVP085 cross-section in normal upright orientation (1,448 mm W × ~2,286 mm H) does not fit through the 1,400 × 2,200 mm door. However, **if the modules are flipped on their side (rotated 90°)**, the geometry changes dramatically:
+The SVP085 cross-section in normal upright orientation (1,448 mm W × ~2,286 mm H) does not fit through the 1,400 × 2,200 mm door. The solution uses **two different transport strategies** depending on the component shape:
 
-| Orientation | Width (through door) | Height (through door) | Fits? |
-|-------------|---------------------|----------------------|-------|
-| **Upright (normal)** | 1,448 mm | ~2,286 mm | **NO** — too wide AND too tall |
-| **Flipped on side** | ~756 mm (I/O height) | 1,448 mm (frame width) | **YES** — 756 < 1,400 and 1,448 < 2,200 |
+**A) Flow tube (cylindrical, ~Ø400 mm):** Does NOT need to be flipped. The flow tube is round — it fits through the door in any orientation. It is valved off, mounted to a temporary Sifab-fabricated transport frame, and rolled straight through the door on a dolly.
 
-**Transport method:** Each module is placed on a rolling cradle/dolly, flipped on its side, and rolled through the door opening. This eliminates the width problem entirely.
+**B) Frame sections (rectangular, 1,448 mm wide):** Must be flipped 90° on their side. In flipped orientation the cross-section becomes ~756 mm × 1,448 mm — fits within the 1,400 × 2,200 mm door.
+
+| Component | Shape | Transport Orientation | Cross-section through door | Fits? |
+|-----------|-------|----------------------|---------------------------|-------|
+| **Flow tube on temp. frame** | Cylindrical Ø400 | **Upright — no flip needed** | ~800 × ~600 mm | **YES** |
+| **Frame sections** | Rectangular 1,448 W | **Flipped 90° on side** | ~756 × 1,448 mm | **YES** |
+| **Hydraulic drive** | Compact box | **Upright** | ~800 × 800 mm | **YES** |
+| **Controller + accessories** | Various small | **Upright** | All < 1,200 mm | **YES** |
 
 **Remaining constraint:** The 5,258 mm overall length must be split into sections short enough to maneuver through corridors and around corners on the platform.
 
@@ -98,34 +102,43 @@ When splitting the frame into sections, the motor and hydraulic equipment are co
 
 ## 4. Proposed 3-Module Split Concept
 
-### Module 1: Flow Tube Assembly (THE CRITICAL MODULE)
+### Module 1: Flow Tube on Temporary Transport Frame (THE CRITICAL MODULE)
 
-**Description:** The precision-calibrated flow tube with detector switches, removed from the structural frame. Transported on its side in a custom cradle.
+**Description:** The precision-calibrated flow tube with detector switches, removed from the Honeywell frame, valved off, and mounted to a temporary Sifab-fabricated transport frame. The flow tube is cylindrical (~Ø400 mm) — it does NOT need to be flipped. It rolls straight through the door upright on its temporary frame.
 
 | Parameter | Value |
 |-----------|-------|
-| Estimated dimensions (tube) | ~3,500 × Ø400 mm |
-| With transport cradle (flipped) | ~3,600 × 800 × 600 mm |
-| Estimated weight | ~1,500–2,000 kg |
-| Transport orientation | Flipped on side, on rolling dolly |
-| Fits through door? | **YES** (800 mm W × 600 mm H, well within 1,400 × 2,200) |
+| Flow tube dimensions | ~3,500 × Ø400 mm (cylindrical) |
+| Temporary transport frame | ~3,600 × 800 × 800 mm |
+| Estimated weight (tube + temp. frame) | ~1,700–2,200 kg |
+| Transport orientation | **UPRIGHT — no flipping needed** (tube is round) |
+| Fits through door? | **YES** (~800 mm W × ~800 mm H, well within 1,400 × 2,200) |
+
+**Temporary transport frame concept:**
+- Sifab designs and fabricates a SS316L temporary frame specifically for moving the flow tube through the platform door
+- Frame includes: saddle supports for the tube, isolation valves on both ends, rollers/wheels on the base, lifting lugs per Norsok R-002, shock-absorbing mounts
+- The flow tube is valved off at both flanged ends to seal and protect the precision-calibrated bore
+- Flange protection covers on RTJ faces (ANSI CL600)
+- After transport through the door, the flow tube is lifted off the temporary frame and mounted back onto the reassembled original Honeywell frame
+- **The temporary frame then comes back out through the door — it is only used for transport**
 
 **Critical requirements:**
 - Flow tube is the heart of the prover — gravimetrically calibrated to ≤0.020% repeatability
 - Must be handled as a precision instrument — NO impacts, NO bending loads
 - Detector switches must be protected (optical/magnetic switches at each end)
 - All openings sealed with VCI (Vapor Corrosion Inhibitor) protection
-- **Flow tube valved off and mounted to a temporary transport frame** (Sifab to design and fabricate, SS316L)
-- Temporary frame provides structural support, rolling capability, and protection during transport through corridors
 - Piston and rod assembly removed and transported separately (inside Module 3)
-- **After reassembly, a water draw test is MANDATORY to verify calibration**
+- **After reassembly on the original Honeywell frame, a water draw test (SAT) is MANDATORY to verify calibration**
 
-**Sifab scope:**
-- Design and fabricate SS316L **temporary transport frame** for flow tube — with valve isolation, shock mounts, rollers, and lifting lugs
-- Temporary frame sized to fit through door when flipped (max cross-section 1,350 × 2,150 mm)
-- Valves on flow tube ends to seal and protect the calibrated bore during transport
+**Honeywell scope (included in bid):**
+- Design and supply SS316L **temporary transport frame** with:
+  - Saddle supports sized to flow tube OD
+  - Isolation valves (CL600) on both ends
+  - Rollers/wheels rated for ~2,200 kg
+  - Shock-absorbing mounts to protect calibrated bore
+  - Lifting lugs per Norsok R-002
 - Flange protection covers (ANSI CL600 RTJ faces)
-- Lifting lugs per Norsok R-002
+- Transport procedure and rigging plan
 
 ### Module 2: Structural Frame + Hydraulic Drive (SPLIT INTO 2 SUB-MODULES)
 
@@ -168,17 +181,27 @@ When splitting the frame into sections, the motor and hydraulic equipment are co
 - Motor: ATEX Ex de/Ex e, 230 VAC 3-phase (confirm 50/60 Hz)
 - Hydraulic connections: Quick-disconnect couplings with dust caps
 
-**Sifab scope:**
-- Structural engineering for frame splice design (bolted connections, Norsok M-101)
+**Honeywell scope (included in bid):**
+- Frame splice design engineering (bolted connections, Norsok M-101)
 - Temporary transport supports for flipped orientation
 - Alignment verification procedure (laser alignment after reassembly)
 - Rolling dollies for corridor transport (Norsok R-002 for lifting)
 
-**KEY ENGINEERING REQUIREMENT — Frame Splice Design:**
+**KEY ENGINEERING REQUIREMENT 1 — Frame Splice Design:**
 The splice must be designed so that when the two frame halves are bolted together and the flow tube is reinstalled, all mounting points are within ±0.5 mm of factory position. Options:
 1. **Precision dowel pins + bolted flanges** — dowels provide alignment, bolts provide clamping
 2. **Machined register faces** — mating surfaces machined at factory, self-aligning when bolted
 3. **Honeywell designs splice from the start** — frame built in two halves with factory-machined joint (preferred)
+
+**KEY ENGINEERING REQUIREMENT 2 — Additional Flow Tube Mounting Points:**
+The standard SVP085 has only 2 mounting points where the flow tube attaches to the frame. When the frame is split, the flow tube must also be supported at each splice location. Otherwise the tube will be unsupported at the joint, creating a bending moment under operating loads (piston cycling, vibration, thermal expansion).
+
+**Requirement:** Add a flow tube mounting/support point at each frame splice location. This means:
+- If frame is split into 2 sections → 1 additional mounting point at the splice (total: 3)
+- Each frame section must have at least 1 flow tube mounting point
+- Additional mounting points must NOT alter the calibrated bore geometry — they must be external saddle supports, not clamps that deform the tube
+- Honeywell to confirm that additional mounting points do not affect calibration or introduce stress concentrations
+- **This must be part of the factory design — not a field modification**
 
 ### Module 3: Controller, Electrical, Piping & Accessories
 
@@ -201,14 +224,14 @@ The splice must be designed so that when the two frame halves are bolted togethe
 
 ### Module Summary
 
-| Module | Contents | Dimensions (transport) | Weight | Transport Method |
-|--------|----------|----------------------|--------|-----------------|
-| 1 | Flow tube + cradle | 3,600 × 800 × 600 mm | ~1,500–2,000 kg | Flipped, rolling dolly |
-| 2A | Frame — drive end | 2,600 × 800 × 1,448 mm | ~600–800 kg | Flipped, rolling dolly |
-| 2B | Frame — non-drive end | 2,700 × 800 × 1,448 mm | ~500–700 kg | Flipped, rolling dolly |
-| 2C | Hydraulic drive unit | 1,200 × 800 × 800 mm | ~500–800 kg | Upright, dolly or carry |
-| 3 | Controller + piping + piston | Various (all < 1,200 mm wide) | ~400–700 kg | Multiple small loads |
-| | **TOTAL** | | **~3,500–5,000 kg** | **5–6 loads through door** |
+| Module | Contents | Dimensions (transport) | Weight | Orientation | Transport Method |
+|--------|----------|----------------------|--------|-------------|-----------------|
+| 1 | Flow tube on temp. frame | 3,600 × 800 × 800 mm | ~1,700–2,200 kg | **Upright** (tube is round) | Rolling dolly/temp. frame |
+| 2A | Frame — drive end | 2,600 × 800 × 1,448 mm | ~600–800 kg | **Flipped 90°** on side | Rolling dolly |
+| 2B | Frame — non-drive end | 2,700 × 800 × 1,448 mm | ~500–700 kg | **Flipped 90°** on side | Rolling dolly |
+| 2C | Hydraulic drive unit | 1,200 × 800 × 800 mm | ~500–800 kg | **Upright** | Dolly or carry |
+| 3 | Controller + piping + piston | Various (all < 1,200 mm wide) | ~400–700 kg | **Upright** | Multiple small loads |
+| | **TOTAL** | | **~3,700–5,200 kg** | | **5–6 loads through door** |
 
 ---
 
@@ -360,33 +383,37 @@ Honeywell standard warranty starts at delivery. If Sifab/others disassemble the 
 | TQ-014 | Can Honeywell laser-mark alignment reference points at the factory to facilitate reassembly alignment verification? | **MEDIUM** |
 | TQ-015 | What is the recommended procedure for piston seal protection during transport? Should a new seal be installed after reassembly? | **HIGH** |
 | TQ-016 | Can the SVP085 frame be designed from the start with bolted splice joints to facilitate modular splitting? (i.e., design-for-split rather than cut-and-splice after factory build) | **CRITICAL** |
-| TQ-017 | We plan to transport the modules through the platform door by flipping them 90° on their side (rotating the cross-section). Can the flow tube and frame withstand being transported in a horizontal/flipped orientation? Any restrictions? | **HIGH** |
+| TQ-017 | The frame sections will be flipped 90° on their side to pass through the platform door (cross-section becomes 756 × 1,448 mm). The flow tube is cylindrical and will be transported upright on a temporary Sifab-fabricated frame — no flipping needed. Can the frame withstand being transported in a flipped orientation? Any restrictions on the flow tube being temporarily mounted on a transport frame? | **HIGH** |
 | TQ-018 | What is the weight of the hydraulic drive unit (motor + pump + oil reservoir) separately from the frame? We plan to remove it for transport to avoid overloading the split frame sections. | **HIGH** |
 | TQ-019 | Can the frame be designed with the splice joint positioned so that the drive-end section and non-drive-end section have approximately equal weight? | **MEDIUM** |
+| TQ-020 | The standard SVP085 has 2 flow tube mounting points. If we split the frame, we need an additional mounting/support point at each splice location so the tube is supported on every frame section. Can Honeywell add saddle-type supports at the splice locations without affecting calibration or introducing stress on the flow tube? | **CRITICAL** |
 
 ---
 
-## 7. Sifab Engineering Scope
+## 7. Honeywell Engineering Deliverables (Required in Bid)
 
-### 7.1 Structural Engineering (Norsok M-101, L-004, R-002)
-- Frame modification design (splice joints or foot removal procedure)
-- Transport cradle design for flow tube (SS316L, shock-mounted)
+All engineering for the modular split is Honeywell's scope. The following must be included in Honeywell's quotation:
+
+### 7.1 Structural (Norsok M-101, L-004, R-002)
+- Split-ready frame design with bolted splice joints
+- Additional flow tube mounting points at splice locations
+- Temporary transport frame for flow tube (SS316L, with rollers and valve isolation)
 - Lifting lug design for each module (Norsok R-002, DNV-ST-N001)
 - Weight and COG calculations for each module
-- Structural analysis of modified frame (FEA if required)
+- Structural analysis of split frame (FEA as required)
 
-### 7.2 Metering Engineering (API MPMS 4.2)
+### 7.2 Metering (API MPMS 4.2)
 - Alignment verification procedure (factory baseline vs. reassembly)
 - Water draw test procedure for SAT
 - Calibration uncertainty analysis (effect of disassembly/reassembly)
-- Coordination with Justervesenet for SAT witness
+- Confirmation that calibration accuracy is maintained after reassembly
 
 ### 7.3 Process / Piping (Norsok L-004, M-630)
-- Disassembly/reassembly procedure for process piping
+- Complete disassembly/reassembly procedure for all process piping
 - Leak test procedure after reassembly
 - Pressure test procedure (hydrostatic 1.5× design)
 
-### 7.4 E&I Engineering (Norsok E-001, I-001, TR3023, TR3032)
+### 7.4 E&I (Norsok E-001, I-001, TR3023, TR3032)
 - Cable and tubing tagging scheme
 - Reconnection verification procedure
 - ATEX integrity check after reassembly
@@ -395,25 +422,62 @@ Honeywell standard warranty starts at delivery. If Sifab/others disassemble the 
 ### 7.5 HSE (Norsok S-001, S-002)
 - Lifting plan for each module (crane capacity, rigging plan)
 - Transport plan through platform corridors
-- Risk assessment (HAZID) for offshore reassembly
-- Permit to Work requirements
+- Risk assessment for offshore reassembly
+- Method statements for disassembly and reassembly
+
+### 7.6 Services (included in Honeywell bid)
+- Honeywell personnel for disassembly at onshore facility in Norway
+- Honeywell certified prover technician on site for reassembly and commissioning on Snorre A
+- SAT (water draw test) after reassembly — witnessed by all parties
+- All transport frames and temporary supports designed and supplied by Honeywell
+- Lifting gear and mounting equipment arranged by end user (Equinor) on the platform
 
 ---
 
-## 8. Recommended Strategy for Honeywell Discussion
+## 8. Honeywell Scope — Full Delivery Including Modular Split
 
-**Key message to Honeywell:** Sifab needs Honeywell to design the SVP085 from the start as a "split-ready" unit. This means:
+### 8.1 Core Principle: Honeywell Owns the Entire Process
 
-1. **Frame designed with bolted splice joints** — not welded, so it can be disassembled without cutting
-2. **Flow tube mounted with bolted connections** — easy to remove from frame without special tools
-3. **Hydraulic system with quick-disconnect couplings** — rapid disconnect/reconnect
-4. **All alignment reference points laser-marked at factory** — for reassembly verification
-5. **Factory-documented disassembly/reassembly procedure** — step-by-step with torque values, alignment tolerances
-6. **Warranty explicitly covers the split process** — warranty starts after SAT on Snorre A
+The modular split, transport, reassembly, and recommissioning is **Honeywell's scope of delivery**. Sifab is the buyer — Honeywell must agree to and deliver the complete solution, including:
 
-**This is not a standard request.** Honeywell has built 100+ offshore SVPs, but we cannot find evidence of a modular split design. Sifab must make the case that this is technically feasible and commercially necessary.
+- Design of the split-ready frame (bolted splice joints)
+- Additional flow tube mounting points at splice locations
+- Temporary transport frame/cradle for the flow tube
+- Factory build, calibration, and FAT as a complete unit
+- Disassembly procedure and execution
+- All transport frames, dollies, and lifting equipment
+- Reassembly on Snorre A platform
+- SAT (water draw test) after reassembly
+- Full warranty starting after successful SAT on Snorre A
 
-**Sifab's value-add:** We have the structural fabrication capability to design and manufacture the transport cradles, modified frame components, and lifting arrangements — all to Norsok standards. We can take ownership of the split engineering while Honeywell focuses on the prover itself.
+**Sifab will work together with Honeywell throughout the process**, providing local support, workshop facilities in Sandnes, offshore logistics coordination, and Norsok compliance oversight. But the engineering responsibility and delivery commitment must be Honeywell's.
+
+### 8.2 What Honeywell Must Include in Their Bid
+
+1. **Frame designed with bolted splice joints from the start** — not welded, so it can be unbolted into 2 sections and reassembled. Factory-machined alignment features (dowel pins or register faces).
+2. **Additional flow tube mounting point at the splice location** — saddle-type support so each frame section carries the tube. Must not affect calibration.
+3. **Temporary transport frame for the flow tube** — with valve isolation, rollers, shock mounts, and lifting lugs. Honeywell to design and supply.
+4. **Hydraulic system with quick-disconnect couplings** — rapid disconnect/reconnect for the drive unit.
+5. **Alignment reference points laser-marked at factory** — for reassembly verification.
+6. **Complete disassembly/reassembly procedure** — documented, with torque values, alignment tolerances, and step-by-step instructions.
+7. **Disassembly at onshore facility in Norway** — Honeywell personnel to supervise or execute.
+8. **Reassembly and commissioning on Snorre A** — Honeywell personnel on site.
+9. **SAT (water draw test) after reassembly** — witnessed by Buyer, Contractor, End Client, and Justervesenet.
+10. **Warranty starts after successful SAT on Snorre A** — minimum 28 months from commissioning, not from factory shipment.
+
+### 8.3 Why This is Feasible
+
+The transport concept is straightforward:
+- The **flow tube** (the precision part) is cylindrical (~Ø400 mm) — it rolls straight through the 1,400 mm door with plenty of clearance, mounted on a temporary transport frame. No flipping, no complex maneuvering.
+- The **frame sections** (structural steel, non-precision) are flipped 90° on their side — simple mechanical handling.
+- The **drive unit and controller** are compact boxes that fit through the door easily.
+- **Once inside, everything goes back onto the original Honeywell frame exactly as it was at FAT.** The temporary transport frame comes back out.
+- A **water draw SAT** confirms calibration is maintained. This is standard practice for any offshore prover installation.
+- Honeywell has over 100 offshore SVPs installed worldwide. The modular split is a logistics challenge, not a technical barrier.
+
+### 8.4 Commercial Reality
+
+This is an Equinor fiscal metering project on Snorre A — a significant contract. The modular split engineering is additional scope that Honeywell should price into their bid. We expect Honeywell to include all costs for the split design, temporary transport equipment, disassembly, reassembly, and SAT as line items in their quotation.
 
 ---
 
@@ -421,16 +485,16 @@ Honeywell standard warranty starts at delivery. If Sifab/others disassemble the 
 
 | # | Action | Owner | Deadline |
 |---|--------|-------|----------|
-| 1 | Send TQ-009 through TQ-016 to Honeywell (via Sidney Swart) | Sondre / Tom | Before 4 March 2026 bid |
+| 1 | Send this modular split plan + TQ-009 through TQ-020 to Honeywell (via Sidney Swart) | Tom | Before 4 March 2026 bid |
 | 2 | Request SVP085 GA drawing from Honeywell | Tom | ASAP |
-| 3 | Confirm door opening dimensions with Equinor/Guidant (exact as-built) | Tom | This week |
-| 4 | Ask Equinor if door frame can be temporarily removed for extra width | Tom | This week |
-| 5 | Structural engineering — preliminary frame sectioning concept | Sifab Structural | 2 weeks |
-| 6 | Transport cradle concept design | Sifab Structural | 2 weeks |
-| 7 | Metering — alignment verification procedure (draft) | Sifab Metering | 3 weeks |
-| 8 | HSE — preliminary lifting plan and HAZID | Sifab HSE | 3 weeks |
-| 9 | Commercial — estimate cost for split engineering scope | Sondre / Tom | For bid submission |
-| 10 | Meeting with Honeywell to discuss split concept | All | ASAP after TQ response |
+| 3 | Confirm door opening dimensions with Equinor/Guidant (exact as-built measurements) | Tom | This week |
+| 4 | Ask Equinor for corridor dimensions and transport route from door to prover room | Tom | This week |
+| 5 | Meeting with Honeywell to discuss split concept and confirm feasibility | Tom / Sondre | ASAP |
+| 6 | Honeywell to provide preliminary split concept drawing | Honeywell | With bid |
+| 7 | Honeywell to provide weight breakdown by component | Honeywell | With bid |
+| 8 | Honeywell to confirm warranty terms for split/reassembly scope | Honeywell | With bid |
+| 9 | Honeywell to price modular split as line items in quotation | Honeywell | With bid |
+| 10 | Sifab to review Honeywell bid and confirm commercial terms | Sondre / Tom | After bid received |
 
 ---
 
