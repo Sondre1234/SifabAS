@@ -19,6 +19,7 @@ The Honeywell SVP085 Small Volume Prover must be installed on Equinor's Snorre A
 |------------|-----------|
 | **Door width** | 1,400 mm |
 | **Door height** | 2,200 mm |
+| **Max module length** | 2,500 mm (corridor/maneuvering constraint) |
 
 The SVP085 as a complete unit **does not fit through this door in any orientation**:
 
@@ -90,7 +91,7 @@ The SVP085 cross-section in normal upright orientation (1,448 mm W × ~2,286 mm 
 | **Hydraulic drive** | Compact box | **Upright** | ~800 × 800 mm | **YES** |
 | **Controller + accessories** | Various small | **Upright** | All < 1,200 mm | **YES** |
 
-**Remaining constraint:** The 5,258 mm overall length must be split into sections short enough to maneuver through corridors and around corners on the platform.
+**Remaining constraint:** No module may exceed 2,500 mm in length. The 5,258 mm overall length must be split into sections that each stay within this limit for corridor maneuvering on the platform.
 
 ### 3.2 Frame Splitting — Weight Distribution is Critical
 
@@ -108,11 +109,14 @@ When splitting the frame into sections, the motor and hydraulic equipment are co
 
 | Parameter | Value |
 |-----------|-------|
-| Flow tube dimensions | ~3,500 × Ø400 mm (cylindrical) |
-| Temporary transport frame | ~3,600 × 800 × 800 mm |
+| Flow tube dimensions | **LENGTH TBD — must be confirmed by Honeywell** × Ø400 mm (cylindrical) |
+| Max allowed length | **2,500 mm** (hard constraint) |
+| Temporary transport frame | Length to match tube + 100 mm, max 800 × 800 mm cross-section |
 | Estimated weight (tube + temp. frame) | ~1,700–2,200 kg |
 | Transport orientation | **UPRIGHT — no flipping needed** (tube is round) |
 | Fits through door? | **YES** (~800 mm W × ~800 mm H, well within 1,400 × 2,200) |
+
+**CRITICAL: Flow tube length must be confirmed by Honeywell.** The SVP085 overall length is 5,258 mm, but the actual flow tube length may be shorter (the overall dimension includes frame overhang, drive housing, etc.). If the flow tube exceeds 2,500 mm, this must be discussed with Honeywell — the calibrated tube cannot be shortened. Honeywell to advise if the tube length is compatible with the 2,500 mm module limit, and if not, what alternatives exist.
 
 **Temporary transport frame concept:**
 - Sifab designs and fabricates a SS316L temporary frame specifically for moving the flow tube through the platform door
@@ -140,27 +144,35 @@ When splitting the frame into sections, the motor and hydraulic equipment are co
 - Flange protection covers (ANSI CL600 RTJ faces)
 - Transport procedure and rigging plan
 
-### Module 2: Structural Frame + Hydraulic Drive (SPLIT INTO 2 SUB-MODULES)
+### Module 2: Structural Frame + Hydraulic Drive (SPLIT INTO SUB-MODULES)
 
-**Description:** The SS316L support frame split into 2 sections at designed splice points. Motor and hydraulic drive **removed from frame and transported as a separate sub-module** to keep frame sections light and balanced.
+**Description:** The SS316L support frame split into 3 sections at designed splice points, each section max 2,500 mm long. Motor and hydraulic drive **removed from frame and transported as a separate sub-module** to keep frame sections light and balanced.
 
 #### Module 2A — Frame Section: Drive End
 | Parameter | Value |
 |-----------|-------|
-| Estimated dimensions | ~2,600 × 1,448 × ~800 mm (upright) |
-| Flipped for transport | ~2,600 × 800 × 1,448 mm |
-| Weight (frame only, drive removed) | ~600–800 kg |
+| Estimated dimensions | ~1,750 × 1,448 × ~800 mm (upright) |
+| Flipped for transport | ~1,750 × 800 × 1,448 mm |
+| Weight (frame only, drive removed) | ~400–500 kg |
 | Fits through door (flipped)? | **YES** (800 mm W × 1,448 mm H) |
 
-#### Module 2B — Frame Section: Non-Drive End
+#### Module 2B — Frame Section: Center
 | Parameter | Value |
 |-----------|-------|
-| Estimated dimensions | ~2,700 × 1,448 × ~800 mm (upright) |
-| Flipped for transport | ~2,700 × 800 × 1,448 mm |
-| Weight (frame only) | ~500–700 kg |
+| Estimated dimensions | ~1,750 × 1,448 × ~800 mm (upright) |
+| Flipped for transport | ~1,750 × 800 × 1,448 mm |
+| Weight (frame only) | ~400–500 kg |
 | Fits through door (flipped)? | **YES** (800 mm W × 1,448 mm H) |
 
-#### Module 2C — Hydraulic Drive Unit (separate from frame)
+#### Module 2C — Frame Section: Non-Drive End
+| Parameter | Value |
+|-----------|-------|
+| Estimated dimensions | ~1,750 × 1,448 × ~800 mm (upright) |
+| Flipped for transport | ~1,750 × 800 × 1,448 mm |
+| Weight (frame only) | ~400–500 kg |
+| Fits through door (flipped)? | **YES** (800 mm W × 1,448 mm H) |
+
+#### Module 2D — Hydraulic Drive Unit (separate from frame)
 | Parameter | Value |
 |-----------|-------|
 | Motor + pump + reservoir | ~1,200 × 800 × 800 mm |
@@ -197,7 +209,7 @@ The splice must be designed so that when the two frame halves are bolted togethe
 The standard SVP085 has only 2 mounting points where the flow tube attaches to the frame. When the frame is split, the flow tube must also be supported at each splice location. Otherwise the tube will be unsupported at the joint, creating a bending moment under operating loads (piston cycling, vibration, thermal expansion).
 
 **Requirement:** Add a flow tube mounting/support point at each frame splice location. This means:
-- If frame is split into 2 sections → 1 additional mounting point at the splice (total: 3)
+- Frame is split into 3 sections → 2 additional mounting points at the splices (total: 4)
 - Each frame section must have at least 1 flow tube mounting point
 - Additional mounting points must NOT alter the calibrated bore geometry — they must be external saddle supports, not clamps that deform the tube
 - Honeywell to confirm that additional mounting points do not affect calibration or introduce stress concentrations
@@ -226,12 +238,13 @@ The standard SVP085 has only 2 mounting points where the flow tube attaches to t
 
 | Module | Contents | Dimensions (transport) | Weight | Orientation | Transport Method |
 |--------|----------|----------------------|--------|-------------|-----------------|
-| 1 | Flow tube on temp. frame | 3,600 × 800 × 800 mm | ~1,700–2,200 kg | **Upright** (tube is round) | Rolling dolly/temp. frame |
-| 2A | Frame — drive end | 2,600 × 800 × 1,448 mm | ~600–800 kg | **Flipped 90°** on side | Rolling dolly |
-| 2B | Frame — non-drive end | 2,700 × 800 × 1,448 mm | ~500–700 kg | **Flipped 90°** on side | Rolling dolly |
-| 2C | Hydraulic drive unit | 1,200 × 800 × 800 mm | ~500–800 kg | **Upright** | Dolly or carry |
+| 1 | Flow tube on temp. frame | TBD (max 2,500) × 800 × 800 mm | ~1,700–2,200 kg | **Upright** (tube is round) | Rolling dolly/temp. frame |
+| 2A | Frame — drive end | ~1,750 × 800 × 1,448 mm | ~400–500 kg | **Flipped 90°** on side | Rolling dolly |
+| 2B | Frame — center | ~1,750 × 800 × 1,448 mm | ~400–500 kg | **Flipped 90°** on side | Rolling dolly |
+| 2C | Frame — non-drive end | ~1,750 × 800 × 1,448 mm | ~400–500 kg | **Flipped 90°** on side | Rolling dolly |
+| 2D | Hydraulic drive unit | 1,200 × 800 × 800 mm | ~500–800 kg | **Upright** | Dolly or carry |
 | 3 | Controller + piping + piston | Various (all < 1,200 mm wide) | ~400–700 kg | **Upright** | Multiple small loads |
-| | **TOTAL** | | **~3,700–5,200 kg** | | **5–6 loads through door** |
+| | **TOTAL** | **All modules ≤ 2,500 mm long** | **~3,800–5,200 kg** | | **6–7 loads through door** |
 
 ---
 
@@ -386,7 +399,8 @@ Honeywell standard warranty starts at delivery. If Sifab/others disassemble the 
 | TQ-017 | The frame sections will be flipped 90° on their side to pass through the platform door (cross-section becomes 756 × 1,448 mm). The flow tube is cylindrical and will be transported upright on a temporary Sifab-fabricated frame — no flipping needed. Can the frame withstand being transported in a flipped orientation? Any restrictions on the flow tube being temporarily mounted on a transport frame? | **HIGH** |
 | TQ-018 | What is the weight of the hydraulic drive unit (motor + pump + oil reservoir) separately from the frame? We plan to remove it for transport to avoid overloading the split frame sections. | **HIGH** |
 | TQ-019 | Can the frame be designed with the splice joint positioned so that the drive-end section and non-drive-end section have approximately equal weight? | **MEDIUM** |
-| TQ-020 | The standard SVP085 has 2 flow tube mounting points. If we split the frame, we need an additional mounting/support point at each splice location so the tube is supported on every frame section. Can Honeywell add saddle-type supports at the splice locations without affecting calibration or introducing stress on the flow tube? | **CRITICAL** |
+| TQ-020 | The standard SVP085 has 2 flow tube mounting points. We are splitting the frame into 3 sections, creating 2 splice locations. We need an additional saddle-type support at each splice so every frame section carries the tube (total: 4 mounting points). Can Honeywell add these without affecting calibration or introducing stress on the flow tube? | **CRITICAL** |
+| TQ-021 | What is the exact length of the SVP085 flow tube (calibrated bore only, excluding frame overhang)? All modules must be ≤2,500 mm long for platform corridor maneuvering. If the flow tube exceeds 2,500 mm, what alternatives does Honeywell propose? | **CRITICAL** |
 
 ---
 
