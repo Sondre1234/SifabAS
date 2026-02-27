@@ -52,7 +52,7 @@ p = doc.add_paragraph()
 p.add_run('The SVP085 must be installed on Snorre A but does not fit through the platform access door as a complete unit. ').font.size = Pt(10)
 p.add_run('The frame is 48 mm too wide.').bold = True
 
-t = doc.add_table(rows=5, cols=3)
+t = doc.add_table(rows=6, cols=3)
 t.style = 'Light Grid Accent 1'
 t.alignment = WD_TABLE_ALIGNMENT.CENTER
 headers = ['', 'SVP085', 'Door']
@@ -60,7 +60,8 @@ data = [
     ['Length', '5,258 mm', 'Max ~2,450 mm (corridor)'],
     ['Width (frame)', '1,448 mm', '1,400 mm  ← TOO WIDE'],
     ['Width (feet)', '1,588 mm', '1,400 mm  ← TOO WIDE'],
-    ['Height', '1,316 mm (1,367 offshore)', '2,200 mm  ← FITS'],
+    ['Height (manual, side flanges)', '1,316 mm (1,367 offshore)', '2,200 mm  ← FITS'],
+    ['Height (this config, top flanges)', 'TBD - higher than manual spec', 'Confirm with Honeywell'],
 ]
 for j, h in enumerate(headers):
     t.rows[0].cells[j].text = h
@@ -71,6 +72,10 @@ for i, row_data in enumerate(data):
 p = doc.add_paragraph()
 p.add_run('\nSolution: ').bold = True
 p.add_run('Split the frame into 3 sections. Flow tube shipped from TruStop in wooden crate, fitted with transport wheels on platform, and rolled through the door. Frame sections flipped 90\u00b0 on their side (756 mm wide) to pass through the door.')
+
+p = doc.add_paragraph()
+p.add_run('NOTE: ').bold = True
+p.add_run('This SVP085 configuration has inlet/outlet flanges mounted on top (not on the side as shown in the manual drawings). This increases the overall height beyond the 1,316 mm manual specification. Exact height with top-mounted 12\" CL600 flanges must be confirmed by Honeywell. This may also affect the cross-section when frame sections are flipped for transport.')
 
 # ============================================================
 # 2. ACCESS CONFIRMED BY GUIDANT
@@ -131,7 +136,7 @@ p.alignment = WD_ALIGN_PARAGRAPH.CENTER
 run = p.add_run()
 run.add_picture('C:/Users/SondreFalch/SifabAS/downloads/SVP085_split_illustration.png', width=Inches(6.2))
 
-p = doc.add_paragraph('Annotated from Honeywell GA Drawing (Manual Part No. 44200001). Red = splice joints. Green = additional mounting brackets.')
+p = doc.add_paragraph('Annotated from Honeywell GA Drawing (Manual Part No. 44200001). Red = splice joints. Green = additional mounting pads.')
 p.runs[0].font.size = Pt(8)
 p.runs[0].font.italic = True
 p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -220,7 +225,7 @@ doc.add_paragraph('Flow tube body is ~2,600 mm (calibrated bore between detector
 doc.add_paragraph('Frame sections flipped 90\u00b0 on their side for transport (cross-section 756 x 1,448 mm). All frame modules < 2,450 mm.', style='List Bullet')
 doc.add_paragraph('Hydraulic drive removed from frame to keep sections light and balanced.', style='List Bullet')
 doc.add_paragraph('Bolted splice joints with precision dowel pins or machined register faces for \u00b10.5 mm alignment.', style='List Bullet')
-doc.add_paragraph('Additional mounting brackets: 1 at far left end (non-drive end) + 2 at splice points = 3 new + 2 existing = 5 total. The left end bracket must be heavy-duty \u2014 the motor drives the piston back and forth through the flow tube, creating significant axial and dynamic loads at this end. This bracket must absorb the reaction forces from piston cycling.', style='List Bullet')
+doc.add_paragraph('Additional mounting pads: 1 at far left end (non-drive end) + 2 at splice points = 3 new + 2 existing = 5 total. The left end mounting pad must be heavy-duty \u2014 the motor drives the piston back and forth through the flow tube, creating significant axial and dynamic loads at this end. This mounting pad must absorb the reaction forces from piston cycling.', style='List Bullet')
 doc.add_paragraph('Water draw test (SAT) mandatory after reassembly to verify \u22640.020% repeatability.', style='List Bullet')
 
 # ============================================================
@@ -278,6 +283,7 @@ tqs = [
     ('TQ-016', 'CRITICAL', 'Can the frame be designed from the start with bolted splice joints (design-for-split)?'),
     ('TQ-020', 'CRITICAL', 'Can Honeywell add saddle-type mounting points at each splice (4 total) without affecting calibration?'),
     ('TQ-021', 'CRITICAL', 'Exact flow tube length (bore only)? Wooden crate dimensions for transport? Crate must be suitable for fitting transport wheels underneath.'),
+    ('TQ-022', 'HIGH', 'This configuration has inlet/outlet flanges on top (not on the side as in the manual). What is the overall height with top-mounted 12\" CL600 flanges? Does this affect the cross-section when frame sections are flipped 90 degrees for transport?'),
 ]
 
 t = doc.add_table(rows=len(tqs)+1, cols=3)
