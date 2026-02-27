@@ -28,7 +28,7 @@ The SVP085 as a complete unit **does not fit through this door in any orientatio
 | Overall length | 5,258 mm | N/A |
 | Width at frame | 1,448 mm | **48 mm too wide** |
 | Width at feet | 1,588 mm | **188 mm too wide** |
-| Height (estimated) | ~2,286 mm | **~86 mm too tall** |
+| Height (per manual, G) | ~1,316 mm (1,367 offshore) | **FITS** (within 2,200 mm) |
 | Weight (dry, est.) | 4,000–5,500 kg | Heavy lift required |
 
 **Conclusion:** The SVP085 must be disassembled into modules that individually fit through a 1,400 × 2,200 mm opening, transported to the installation location, and reassembled with full calibration accuracy maintained.
@@ -78,7 +78,7 @@ The Hugin A and Valhall provers were installed during platform construction or t
 
 ### 3.1 Key Insight: Different Strategy per Module Type
 
-The SVP085 cross-section in normal upright orientation (1,448 mm W × ~2,286 mm H) does not fit through the 1,400 × 2,200 mm door. The solution uses **two different transport strategies** depending on the component shape:
+The SVP085 cross-section in normal upright orientation (1,448 mm W × ~1,316 mm H) exceeds the 1,400 mm door width. The solution uses **two different transport strategies** depending on the component shape:
 
 **A) Flow tube (cylindrical, ~Ø400 mm):** Does NOT need to be flipped. The flow tube is round — it fits through the door in any orientation. It is valved off, mounted to a temporary Sifab-fabricated transport frame, and rolled straight through the door on a dolly.
 
