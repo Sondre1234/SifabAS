@@ -21,6 +21,10 @@ secrets/
 # Downloads
 downloads/
 
+# Python
+__pycache__/
+*.pyc
+
 # Temp
 *.tmp
 *.bak
