@@ -19,22 +19,18 @@ Manages customer relationships, tracks commitments and deliverables, and ensures
 
 ## Customer Data Management
 
-Customer records are stored in `/customers/` with the following structure per customer:
-```
-/customers/<customer-name>/
-  profile.md         — Company info, key contacts, preferences
-  history.md         — Completed and active projects, satisfaction notes
-  commitments.md     — Open commitments with deadlines and status
-  rfq-log.md         — RFQ/proposal pipeline for this customer
-```
+Customer data is managed through:
+- **Email**: All correspondence via `tools/email_client.py` (Microsoft 365 Graph API)
+- **Project files**: Customer-specific notes in `/projects/<project-id>/` folders
+- **Shared drive**: Contracts, RFQs, and formal documents in OneDrive SP-folders
 
 ## Inputs
 
 - Project status updates (from Project Manager)
 - Deliverable completion notifications (from discipline agents via Project Manager)
-- Customer emails and meeting notes (from Email Agent)
-- RFQ documents (from `/documents/rfq/`)
-- Contract milestones (from `/documents/contracts/`)
+- Customer emails and meeting notes (from Email Agent via Graph API)
+- RFQ documents (from shared OneDrive SP-folders)
+- Contract milestones (from shared OneDrive SP-folders)
 
 ## Outputs
 

@@ -69,6 +69,16 @@ Ensures all engineering work meets Norwegian health, safety, and environmental (
 | Email Agent | Requests communication with PSA, Equinor, or other operators on HSE matters |
 | Customer Follow-up | Provides HSE compliance status for customer reporting |
 
+## Reference Material
+
+Standard summaries are available in the repository for agent use:
+- `/standards/norsok/S-001-technical-safety.md` — Technical safety
+- `/standards/norsok/S-002-working-environment.md` — Working environment
+- `/standards/norsok/S-003-environmental-care.md` — Environmental care
+- `/standards/norsok/Z-008-risk-based-maintenance.md` — Risk-based maintenance
+- `/standards/norsok/Z-013-risk-emergency-preparedness.md` — Risk and emergency preparedness
+- `/standards/hse/` — PSA regulations, functional safety (IEC 61508/61511), ATEX, PED, hazardous area classification
+
 ## Decision Authority
 
 - Can stop work or reject deliverables that violate safety requirements

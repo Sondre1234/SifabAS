@@ -30,10 +30,11 @@ The Project Manager must also be conversant with all discipline-specific Norsok 
 
 ## Inputs
 
-- Customer RFQ or contract (from `/documents/rfq/` or `/documents/contracts/`)
-- Discipline engineering outputs (from each agent's handoff)
+- Customer RFQ or contract (from shared OneDrive SP-folders: `03 Underlag fra Kunde/`)
+- Discipline engineering outputs (from each agent's handoff in `/projects/<project-id>/handoffs/`)
 - Project change requests
 - Schedule updates and progress reports from discipline agents
+- Standard summaries in `/standards/norsok/` for reference
 
 ## Outputs
 

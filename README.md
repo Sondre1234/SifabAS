@@ -2,7 +2,7 @@
 
 **Supplying energy solutions that exceed expectations — your partner in specialized flow metering and more.**
 
-Sifab AS is a specialized supplier in the Norwegian energy market, located in Bedriftsveien 24, 4313 Sandnes, Norway. We deliver flow metering solutions for custody transfer, fiscal, and process applications, along with skid fabrication, tank gauging systems, wave monitoring, and special items for offshore and onshore installations.
+Sifab AS is a specialized supplier in the Norwegian energy market, located in Bedriftsveien 20, 4313 Sandnes, Norway. We deliver flow metering solutions for custody transfer, fiscal, and process applications, along with skid fabrication, tank gauging systems, wave monitoring, and special items for offshore and onshore installations.
 
 **Website:** [www.sifab.no](https://www.sifab.no)
 
@@ -46,11 +46,11 @@ All work is governed by:
 This repository supports Sifab AS operations through AI-assisted engineering agents. See [CLAUDE.md](CLAUDE.md) for detailed guidance.
 
 ```
-/agents       — Agent role definitions and instructions
-/projects     — Project workspaces
-/documents    — Controlled documents (standards, contracts, RFQs, reports, drawings, ISO)
-/email        — Email management
-/customers    — Customer records and follow-up
+/agents       — AI agent definitions (10 agents with defined roles)
+/projects     — Active project workspaces (markdown only, binaries on OneDrive)
+/standards    — NORSOK, HSE, and metering standard summaries for agents
+/documents    — ISO 9001 QMS documents (manual, policy, procedures)
+/tools        — Python utility scripts (email client, spec tools)
 ```
 
 ## Contact
@@ -62,5 +62,5 @@ This repository supports Sifab AS operations through AI-assisted engineering age
 | Oliver Vetland | Project Manager / Engineer | +47 928 63 409 | oliver@sifab.no |
 | Sayed M. Mortazavi | Service Engineer | +47 403 14 678 | sayed@sifab.no |
 
-**Address:** Bedriftsveien 24, 4313 Sandnes, Norway
+**Address:** Bedriftsveien 20, 4313 Sandnes, Norway
 **LinkedIn:** [linkedin.com/company/sifab-as](https://www.linkedin.com/company/sifab-as/)

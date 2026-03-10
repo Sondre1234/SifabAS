@@ -32,10 +32,9 @@ Handles all external and internal email communication on behalf of SifabAS. Draf
 
 ## Outputs
 
-- Draft emails (stored in `/email/drafts/` for review before sending)
-- Parsed email summaries with action items (stored in `/email/parsed/`)
-- Email logs (stored in `/email/logs/`)
-- Meeting minutes (stored in `/projects/<project-id>/minutes/`)
+- Draft emails (presented to user for review before sending via `tools/email_client.py`)
+- Parsed email summaries with action items (delivered to requesting agent)
+- Meeting minutes (stored in `/projects/<project-id>/handoffs/`)
 - Transmittal letters for document submissions
 
 ## Collaboration
@@ -46,15 +45,10 @@ Handles all external and internal email communication on behalf of SifabAS. Draf
 | All discipline agents | Receives technical content for vendor/regulatory correspondence; routes incoming technical queries |
 | Customer Follow-up | Coordinates on customer communication timing, tone, and follow-up commitments |
 
-## Templates
+## Tools
 
-The Email Agent uses templates stored in `/email/templates/` for:
-- Proposal cover letters
-- Document transmittals
-- Meeting invitations
-- Technical query (TQ) forms
-- RFQ response letters
-- Standard acknowledgement emails
+- **Email client**: `tools/email_client.py` — Microsoft 365 Graph API integration for reading, searching, and sending email
+- Email is sent via the Graph API, not through file-based storage
 
 ## Key Principles
 

@@ -68,7 +68,7 @@ SHARED="$USERPROFILE/OneDrive - Sifab AS/Dokumenter - Felles"
 
 This repository is the operational backbone for SifabAS, structured around **AI agents** that assist human engineers. Each agent has a defined role, Norsok compliance scope, and collaboration interfaces with other agents. The `/agents` directory contains one subfolder per agent with an `AGENT.md` describing responsibilities, standards, inputs/outputs, and inter-agent workflows.
 
-## Project Structure
+## Repository Structure
 
 ```
 /agents                    — AI agent definitions (one subfolder per agent)
@@ -80,18 +80,16 @@ This repository is the operational backbone for SifabAS, structured around **AI 
   /metering                — Metering specialist/engineering
   /quality-management      — ISO 9001 QMS enforcement & B.SI.01.07 document control
   /iso-document-producer   — Authors all internal ISO 9001 documents, procedures, and forms
-  /email                   — Email drafting, parsing, and routing
+  /email                   — Email drafting, parsing, and routing (via Graph API tool)
   /customer-followup       — Customer relationship & follow-up
-/projects                  — Active and archived project folders
-/documents                 — Controlled document store
-  /norsok                  — Norsok standard references and summaries
-  /contracts               — Customer contracts and framework agreements
-  /rfq                     — Requests for quotation (incoming and outgoing)
-  /reports                 — Engineering reports and deliverables
-  /drawings                — P&IDs, layout drawings, isometrics, etc.
-  /iso                     — ISO 9001 QMS documents (manual, procedures, forms, records)
-/email                     — Email templates, logs, and drafts
-/customers                 — Customer profiles, contact lists, history
+/projects                  — Active project workspaces (markdown only, binaries on OneDrive)
+/standards                 — Agent-readable reference material
+  /norsok                  — NORSOK standard summaries (~25 standards)
+  /hse                     — HSE/HMS regulatory references (PSA, ATEX, PED, IEC, etc.)
+  /metering                — Metering regulations (NPD, API MPMS)
+/documents                 — Company-controlled QMS documents
+  /iso                     — ISO 9001 QMS (manual, policy, procedures, forms, records)
+/tools                     — Python utility scripts (email client, spec tools, etc.)
 ```
 
 ## Key Conventions
