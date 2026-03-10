@@ -12,6 +12,58 @@ Sifab AS is **ISO 9001 certified** and compliant with **PED**, **TR 2000**, and 
 
 **Website:** [www.sifab.no](https://www.sifab.no)
 
+## Users
+
+This repo is shared between:
+
+| Name | Role | Email | Windows User |
+|------|------|-------|--------------|
+| **Sondre Falch** | Sales Manager | sondre.falch@sifab.no | SondreFalch |
+| **Tom Sverre Falch** | General Manager | tom.falch@sifab.no | TomFalch |
+
+Both users have access to the shared OneDrive folder. Identify the current user from the `USERPROFILE` or `HOME` environment variable.
+
+## Setup
+
+1. Copy `.env.example` to `.env` and fill in your email address
+2. Run `python tools/email_client.py login` to authenticate with Microsoft 365
+3. The shared OneDrive folder is auto-detected from your home directory
+
+## Shared Drive
+
+All binary files (PDF, Word, Excel, PowerPoint) are stored on the **shared OneDrive drive**, never in git.
+
+**Path pattern:** `<USERPROFILE>/OneDrive - Sifab AS/Dokumenter - Felles/`
+
+To resolve the path in scripts, use:
+```python
+from pathlib import Path
+import os
+SHARED_DRIVE = Path(os.environ['USERPROFILE']) / 'OneDrive - Sifab AS' / 'Dokumenter - Felles'
+```
+
+Or in bash:
+```bash
+SHARED="$USERPROFILE/OneDrive - Sifab AS/Dokumenter - Felles"
+```
+
+## File Storage Rules
+
+- **Git repo**: Only code, markdown (.md), config files, and `.gitignore`d items
+- **Shared drive**: All PDF, Word, Excel, PowerPoint files go in the correct SP-folder
+- **Standard project folder structure** (see `Maler/Prosjektmal flowmålere/` on shared drive):
+  - `01.Bestillinger & Ordrebekreftelser` — Orders & confirmations
+  - `02 Tilbud` — Quotes
+  - `03 Underlag fra Kunde` — Customer-provided documents
+  - `04 E-mail` — Email correspondence
+  - `05 Dokumentasjon` — Documentation
+  - `06 Møtereferat` — Meeting minutes
+  - `07 Clarifications`
+  - `08 Underlag fra Leverandører` — Supplier documents
+  - `09 VOR` — Variation Order Requests
+  - `10 Bilder` — Photos
+  - `11 Punch lists`
+
 ## Repository Purpose
 
 This repository is the operational backbone for SifabAS, structured around **AI agents** that assist human engineers. Each agent has a defined role, Norsok compliance scope, and collaboration interfaces with other agents. The `/agents` directory contains one subfolder per agent with an `AGENT.md` describing responsibilities, standards, inputs/outputs, and inter-agent workflows.

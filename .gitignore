@@ -12,7 +12,7 @@ desktop.ini
 # Sensitive
 .env
 .env.*
-*.env
+!.env.example
 credentials/
 secrets/
 .token_cache.json
@@ -28,3 +28,12 @@ downloads/
 
 # Generated PDFs
 documents/iso/*.pdf
+
+# Binary files — store on shared drive (OneDrive SP-folders), not in git
+*.pdf
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.pptx
+*.ppt
