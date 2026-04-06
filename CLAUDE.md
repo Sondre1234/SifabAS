@@ -82,6 +82,8 @@ This repository is the operational backbone for SifabAS, structured around **AI 
   /iso-document-producer   — Authors all internal ISO 9001 documents, procedures, and forms
   /email                   — Email drafting, parsing, and routing (via Graph API tool)
   /customer-followup       — Customer relationship & follow-up
+  /uk-sales                — UK/FHNS sales: Faure Herman UK business, client emails, quotes
+  /maloney                 — Maloney prover spheres: inquiry → quote → order → delivery
 /projects                  — Active project workspaces (markdown only, binaries on OneDrive)
 /standards                 — Agent-readable reference material
   /norsok                  — NORSOK standard summaries (~25 standards)
@@ -111,5 +113,7 @@ Agents operate in a hub-and-spoke model:
 4. **Discipline agents** (Instrumentation, Process, Structural, Metering, HSE) produce and review engineering deliverables.
 5. **Email Agent** handles all external communication drafting and parsing.
 6. **Customer Follow-up Agent** tracks commitments, deadlines, and satisfaction.
+7. **UK Sales Agent** manages Faure Herman UK (FHNS) business — client emails, quotes, Faure Herman liaison.
+8. **Maloney Agent** handles all Maloney prover sphere business — inquiry, supplier quoting (Hultec), customer quotation, ordering, delivery tracking.
 
 When working on a task, always check the relevant `AGENT.md` for the agent's scope, required standards, and expected output formats.

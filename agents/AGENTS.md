@@ -12,6 +12,8 @@
 | 8 | **[ISO Document Producer](iso-document-producer/AGENT.md)** | Authors all internal QMS documents, procedures, forms, templates | ISO 9001:2015, B.SI.xx.xx series |
 | 9 | **[Email](email/AGENT.md)** | Drafts/parses external and internal email, routes to agents | — |
 | 10 | **[Customer Follow-up](customer-followup/AGENT.md)** | Tracks customer commitments, deadlines, satisfaction | — |
+| 11 | **[UK Sales](uk-sales/AGENT.md)** | UK/FHNS sales: Faure Herman UK business, client emails, quotes | — |
+| 12 | **[Maloney](maloney/AGENT.md)** | Maloney prover spheres: inquiry → quote → order → delivery | — |
 
 ## How Agents Work Together
 
