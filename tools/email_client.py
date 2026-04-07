@@ -7,6 +7,7 @@ Bruk:
     py tools/email_client.py inbox 20       — Vis siste 20 e-poster
     py tools/email_client.py read <id>      — Les en bestemt e-post
     py tools/email_client.py send <til> <emne> <melding>  — Send e-post
+    py tools/email_client.py reply <nr> <melding>         — Svar på e-post (beholder tråd)
     py tools/email_client.py search <søkeord>             — Søk i e-post
 """
 
@@ -382,6 +383,55 @@ def text_to_html(text):
     return ''.join(html_parts)
 
 
+def cmd_reply(msg_ref, comment, cc=None, attachments=None):
+    """Reply to an email, keeping the thread intact."""
+    token = get_token()
+
+    # Resolve message ID
+    id_map_file = Path(__file__).parent.parent / '.last_inbox.json'
+    if msg_ref.isdigit() and id_map_file.exists():
+        id_map = json.loads(id_map_file.read_text())
+        msg_id = id_map.get(msg_ref, msg_ref)
+    else:
+        msg_id = msg_ref
+
+    html_comment = text_to_html(comment)
+
+    data = {
+        "message": {},
+        "comment": html_comment
+    }
+
+    if cc:
+        data["message"]["ccRecipients"] = [
+            {"emailAddress": {"address": addr.strip()}} for addr in cc.split(",")
+        ]
+
+    if attachments:
+        import base64
+        att_list = []
+        for filepath in attachments:
+            fp = Path(filepath)
+            if not fp.exists():
+                print(f"Vedlegg ikke funnet: {filepath}")
+                continue
+            att_list.append({
+                "@odata.type": "#microsoft.graph.fileAttachment",
+                "name": fp.name,
+                "contentBytes": base64.b64encode(fp.read_bytes()).decode()
+            })
+        if att_list:
+            data["message"]["attachments"] = att_list
+
+    api_post(f"/me/messages/{msg_id}/reply", token, data)
+
+    # Get original message to show sender
+    orig = api_get(f"/me/messages/{msg_id}?$select=from,subject", token)
+    sender = orig.get("from", {}).get("emailAddress", {}).get("address", "ukjent")
+    subject = orig.get("subject", "")
+    print(f"Svar sendt på \"{subject}\" (til {sender})")
+
+
 def cmd_forward(msg_ref, to, comment):
     """Forward an email (with attachments) to a new recipient."""
     token = get_token()
@@ -449,6 +499,28 @@ if __name__ == "__main__":
             print("Bruk: attachments <nr eller id>")
             sys.exit(1)
         cmd_attachments(sys.argv[2])
+    elif cmd == "reply":
+        if len(sys.argv) < 4:
+            print("Bruk: reply <nr eller id> <melding> [--cc <adresser>] [--attachment <fil>]...")
+            sys.exit(1)
+        args = sys.argv[2:]
+        msg_ref = args[0]
+        att_files = []
+        cc_addr = None
+        remaining = []
+        i = 1
+        while i < len(args):
+            if args[i] == "--attachment" and i + 1 < len(args):
+                att_files.append(args[i + 1])
+                i += 2
+            elif args[i] == "--cc" and i + 1 < len(args):
+                cc_addr = args[i + 1]
+                i += 2
+            else:
+                remaining.append(args[i])
+                i += 1
+        reply_body = " ".join(remaining)
+        cmd_reply(msg_ref, reply_body, cc=cc_addr, attachments=att_files if att_files else None)
     elif cmd == "forward":
         if len(sys.argv) < 5:
             print("Bruk: forward <nr eller id> <til> <kommentar>")
