@@ -14,6 +14,8 @@
 | 10 | **[Customer Follow-up](customer-followup/AGENT.md)** | Tracks customer commitments, deadlines, satisfaction | — |
 | 11 | **[UK Sales](uk-sales/AGENT.md)** | UK/FHNS sales: Faure Herman UK business, client emails, quotes | — |
 | 12 | **[Maloney](maloney/AGENT.md)** | Maloney prover spheres: inquiry → quote → order → delivery | — |
+| 13 | **[Procurement](procurement/AGENT.md)** | Supplier POs, free-issue items, lead times, sub-contracts, freight, back-to-back terms | TR2000, TR0042, TR1427, NACE, NORSOK M-501, M-630, R-002 |
+| 14 | **[Commercial-Finance](commercial-finance/AGENT.md)** | Revenue/cost/margin, cashflow, currency, bank guarantees, milestone invoicing | B.SI.01.07, ISO 9001 |
 
 ## How Agents Work Together
 
