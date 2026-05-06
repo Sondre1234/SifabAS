@@ -29,6 +29,13 @@ __pycache__/
 *.tmp
 *.bak
 ~$*
+temp/
+temp_logo.*
+zigma_new_proj_form.png
+
+# Skills (managed via skills-lock.json)
+.claude/skills/
+.agents/
 
 # Generated PDFs
 documents/iso/*.pdf
