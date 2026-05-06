@@ -16,7 +16,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
-SHARED = Path(os.environ['USERPROFILE']) / 'OneDrive - Sifab AS' / 'Dokumenter - Felles'
+from _paths import SHARED
 PROJECT = SHARED / 'Zigma360' / 'Projects' / 'SP-01415 Small Volume Prover Snorre A'
 DEST = PROJECT / '05 Dokumentasjon' / '03.Dok sendt leverandør for oppdatering'
 DEST.mkdir(parents=True, exist_ok=True)

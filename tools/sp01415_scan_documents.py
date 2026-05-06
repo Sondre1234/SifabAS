@@ -63,7 +63,7 @@ from openpyxl.styles import Font, PatternFill  # noqa: E402
 # We reuse the email_client auth + helpers
 from email_client import api_get, get_token  # noqa: E402
 
-SHARED = Path(os.environ['USERPROFILE']) / 'OneDrive - Sifab AS' / 'Dokumenter - Felles'
+from _paths import SHARED
 PROJECT = SHARED / 'Zigma360' / 'Projects' / 'SP-01415 Small Volume Prover Snorre A'
 TRACKER = PROJECT / 'SP-01415_Dokument_status_og_oppfølging.xlsx'
 

@@ -18,7 +18,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent))
 from build_deviation_list import DEVIATIONS as REV0_DEVIATIONS, set_cell, add_header_table, severity_color  # noqa: E402
 
-SHARED = Path(os.environ['USERPROFILE']) / 'OneDrive - Sifab AS' / 'Dokumenter - Felles'
+from _paths import SHARED
 DEST = SHARED / 'Zigma360' / 'Projects' / 'SP-01415 Small Volume Prover Snorre A' / '05 Dokumentasjon' / '04.Dok sendt til kunde'
 
 # --------------------------------------------------------------------------

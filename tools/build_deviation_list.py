@@ -5,7 +5,7 @@ from docx import Document
 from docx.shared import Pt, RGBColor, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
-SHARED = Path(os.environ['USERPROFILE']) / 'OneDrive - Sifab AS' / 'Dokumenter - Felles'
+from _paths import SHARED
 DEST = SHARED / 'Zigma360' / 'Projects' / 'SP-01415 Small Volume Prover Snorre A' / '05 Dokumentasjon' / '04.Dok sendt til kunde'
 
 
