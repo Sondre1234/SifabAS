@@ -71,9 +71,19 @@ def build_styles():
     return styles
 
 
-def build_jci_quote(output_path: str):
+def build_jci_quote(output_path: str, currency: str = "USD", unit_price: float = 850.00,
+                     quote_date: str = "07 April 2026", valid_until: str = "07 May 2026",
+                     quote_ref: str = "MAL-2026-001"):
     styles = build_styles()
     margin = 18 * mm
+    qty = 2
+    total = unit_price * qty
+    if currency == "NOK":
+        unit_str = f"NOK {unit_price:,.2f}".replace(",", " ")
+        total_str = f"NOK {total:,.2f}".replace(",", " ")
+    else:
+        unit_str = f"{currency} {unit_price:,.2f}"
+        total_str = f"{currency} {total:,.2f}"
 
     doc = SimpleDocTemplate(
         output_path, pagesize=A4,
@@ -138,13 +148,13 @@ def build_jci_quote(output_path: str):
 
     meta_right_data = [
         [Paragraph("<b>Quote Ref:</b>", styles["BodySmallBold"]),
-         Paragraph("MAL-2026-001", styles["BodySmall"])],
+         Paragraph(quote_ref, styles["BodySmall"])],
         [Paragraph("<b>Date:</b>", styles["BodySmallBold"]),
-         Paragraph("07 April 2026", styles["BodySmall"])],
+         Paragraph(quote_date, styles["BodySmall"])],
         [Paragraph("<b>Your Ref:</b>", styles["BodySmallBold"]),
          Paragraph("Sphere (Eddie Schrader / PX Limited)", styles["BodySmall"])],
         [Paragraph("<b>Valid Until:</b>", styles["BodySmallBold"]),
-         Paragraph("07 May 2026", styles["BodySmall"])],
+         Paragraph(valid_until, styles["BodySmall"])],
     ]
     right_table = Table(meta_right_data, colWidths=[24 * mm, 56 * mm])
     right_table.setStyle(box_style)
@@ -197,8 +207,8 @@ def build_jci_quote(output_path: str):
             styles["CellDesc"],
         ),
         Paragraph("2 pcs", styles["BodySmall"]),
-        Paragraph("USD 850.00", styles["RightAlign"]),
-        Paragraph("USD 1,700.00", styles["RightAlign"]),
+        Paragraph(unit_str, styles["RightAlign"]),
+        Paragraph(total_str, styles["RightAlign"]),
     ])
 
     # Total row
@@ -206,7 +216,7 @@ def build_jci_quote(output_path: str):
         "", "",
         Paragraph("", styles["BodySmall"]),
         Paragraph("<b>Total DDP:</b>", styles["RightAlignBold"]),
-        Paragraph("<b>USD 1,700.00</b>", styles["RightAlignBold"]),
+        Paragraph(f"<b>{total_str}</b>", styles["RightAlignBold"]),
     ])
 
     items_table = Table(table_data, colWidths=col_widths, repeatRows=1)
@@ -241,9 +251,9 @@ def build_jci_quote(output_path: str):
         [Paragraph("<b>Payment</b>", styles["BodySmallBold"]),
          Paragraph("Net 30 days", styles["BodySmall"])],
         [Paragraph("<b>Validity</b>", styles["BodySmallBold"]),
-         Paragraph("07 May 2026", styles["BodySmall"])],
+         Paragraph(valid_until, styles["BodySmall"])],
         [Paragraph("<b>Currency</b>", styles["BodySmallBold"]),
-         Paragraph("USD", styles["BodySmall"])],
+         Paragraph(currency, styles["BodySmall"])],
         [Paragraph("<b>Certificates</b>", styles["BodySmallBold"]),
          Paragraph("Certificate of Conformity and Manufacturer's Certificate of Origin "
                     "included at no additional charge", styles["BodySmall"])],
@@ -302,7 +312,15 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", "-o", default=None)
+    parser.add_argument("--currency", default="USD")
+    parser.add_argument("--unit-price", type=float, default=850.00)
+    parser.add_argument("--date", default="07 April 2026")
+    parser.add_argument("--valid-until", default="07 May 2026")
+    parser.add_argument("--quote-ref", default="MAL-2026-001")
     args = parser.parse_args()
-    out = args.output or str(SHARED_DRIVE / "Zigma360" / "Projects" / "MAL-2026-001_Quote_JCI.pdf")
-    build_jci_quote(out)
+    default_name = f"{args.quote_ref}_Quote_JCI" + (f"_{args.currency}" if args.currency != "USD" else "") + ".pdf"
+    out = args.output or str(SHARED_DRIVE / "Zigma360" / "Projects" / default_name)
+    build_jci_quote(out, currency=args.currency, unit_price=args.unit_price,
+                     quote_date=args.date, valid_until=args.valid_until,
+                     quote_ref=args.quote_ref)
     print(f"Quote generated: {out}")

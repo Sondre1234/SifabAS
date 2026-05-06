@@ -15,7 +15,21 @@
       "Bash(find C:\\\\Users\\\\SondreFalch\\\\OneDrive - Sifab AS\\\\Dokumenter - Felles\\\\Zigma360\\\\Projects\\\\SP-00525 and SP-00577 Prover NOA og Valhall Fenris\\\\02 Tilbud:*)",
       "Bash(py:*)",
       "Bash(ls:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "WebSearch",
+      "WebFetch(domain:www.gilautomation.com)",
+      "WebFetch(domain:www.honeywellprocess.com)",
+      "WebFetch(domain:acuraflow.com)",
+      "WebFetch(domain:www.scribd.com)",
+      "WebFetch(domain:flowmd.com)",
+      "WebFetch(domain:everestautomation.com)",
+      "WebFetch(domain:www.calderltd.com)",
+      "Bash(cd /c/Users/SondreFalch/SifabAS && python tools/email_client.py search --query \"from:Tom prover\" --folder inbox --limit 10)",
+      "Bash(python -c \"\nimport fitz, sys, os\nsys.stdout.reconfigure\\(encoding='utf-8'\\)\ndoc = fitz.open\\('C:/Users/SondreFalch/SifabAS/downloads/44200001 Prover Service Manual.pdf'\\)\n\n# Extract images from key pages: 32 \\(dimensions\\), 37-39 \\(installation/dimensions/anchor\\), 107 \\(bracket\\)\noutput_dir = 'C:/Users/SondreFalch/SifabAS/downloads/prover_manual_images'\nos.makedirs\\(output_dir, exist_ok=True\\)\n\ntarget_pages = [31, 32, 33, 37, 38, 39, 106, 107]  # 0-indexed\n\nfor pg_idx in target_pages:\n    page = doc.load_page\\(pg_idx\\)\n    images = page.get_images\\(full=True\\)\n    for img_idx, img in enumerate\\(images\\):\n        xref = img[0]\n        base = doc.extract_image\\(xref\\)\n        img_bytes = base['image']\n        ext = base['ext']\n        fname = f'page{pg_idx+1}_img{img_idx+1}.{ext}'\n        fpath = os.path.join\\(output_dir, fname\\)\n        with open\\(fpath, 'wb'\\) as f:\n            f.write\\(img_bytes\\)\n        print\\(f'Saved: {fname} \\({len\\(img_bytes\\)} bytes\\)'\\)\n\n    # Also render the full page as PNG\n    pix = page.get_pixmap\\(dpi=200\\)\n    pix.save\\(os.path.join\\(output_dir, f'page{pg_idx+1}_full.png'\\)\\)\n    print\\(f'Saved: page{pg_idx+1}_full.png'\\)\n    print\\(\\)\n\" 2>&1)",
+      "Bash(python:*)",
+      "Bash(rm:*)",
+      "Bash(start:*)",
+      "Bash(printf '\\\\xEF\\\\xBB\\\\xBF')"
     ]
   }
 }
