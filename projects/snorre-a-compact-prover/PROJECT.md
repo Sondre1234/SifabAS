@@ -1,17 +1,27 @@
 # Project: Snorre A — Small Volume Prover (SVP)
 
+> **Status (2026-05-05): IN EXECUTION** — PO 4500998501 received 2026-04-30, USD 1,608,262.36, FCA Sandnes, delivery 2027-04-15.
+> Execution plan: [handoffs/SP-01415_Project_Execution_Plan_PO_Received.md](handoffs/SP-01415_Project_Execution_Plan_PO_Received.md)
+
 | Field | Value |
 |-------|-------|
+| **Sifab Project** | SP-01415 |
+| **PO Number** | 4500998501 (issued 2026-04-29, received 2026-04-30) |
+| **PO Value** | USD 1,608,262.36 |
+| **Customer Project** | GM-5341 Snorre A Oil Metering |
 | **RFQ No.** | GM-8501-1447 |
-| **Project** | Snorre A |
-| **Client** | Guidant Measurement Solutions Norway AS (Measurement Solutions Norway AS) |
+| **Customer** | Guidant — Measurement Solutions Norway AS |
 | **End Client** | Equinor — Snorre A platform, Norwegian North Sea |
 | **Honeywell Champ** | O-1010834 |
-| **Bid Deadline** | 4 March 2026 |
-| **Sifab Team** | Tom Sverre Falch, Sondre Falch |
+| **Sifab Team** | Tom S. Falch (commercial), Sondre Falch (sales/PM), Oliver Vetland (engineering) |
 | **Honeywell Support** | Sidney Swart (lead), Samir Sakota (prover specialist), Mark Price, Eric van der Made |
-| **Guidant Contact** | Torleif Espegard, Senior Tender Engineer (+47 982 88 704) |
-| **Warranty** | Min. 28 months after installation at platform |
+| **Guidant Commercial** | Anne Krotseng (anne.krotseng@guidantmeasurement.com) |
+| **Guidant Project Manager** | Martin Carlsson |
+| **Guidant Technical** | Feraz Mohammed |
+| **Guidant Quality** | Berit Dahl Hystad |
+| **Delivery** | 2027-04-15 (FCA Sandnes) |
+| **Warranty** | 28 months after installation at platform |
+| **Governing T&C** | PP-PS-13 Rev 00 |
 
 ---
 
