@@ -1,0 +1,62 @@
+Company,Name,Title,Email,Verified,Priority,Location,Source
+Equinor,Svein Inge Kallevik,Manager Procurement,svkallevik@equinor.com,No,TOP,Stavanger,LinkedIn
+Equinor,Ingun Høiby,Sr. Category Manager,inhøiby@equinor.com,No,TOP,Stavanger,LinkedIn
+Equinor,Lars Henrik Hosøy,Category Manager Electrical System Infrastructure,lahosøy@equinor.com,No,TOP,Bergen,LinkedIn - closest to instrument category
+Equinor,Christopher Goos,Project Procurement Manager,chgoos@equinor.com,No,HIGH,Stavanger,LinkedIn
+Equinor,Erik Amdal,Procurement Manager,eramdal@equinor.com,No,HIGH,Stavanger,LinkedIn
+Equinor,Cathrine Sværen Widlund,Project Procurement Manager,cawidlund@equinor.com,No,HIGH,Stavanger,LinkedIn
+Equinor,Asbjørn Isachsen,Leader Supply Chain Management,asisachsen@equinor.com,No,HIGH,Stavanger,LinkedIn
+Equinor,Nils Borge,Specialist Supply Chain Management,niborge@equinor.com,No,MEDIUM,Stavanger,LinkedIn
+Equinor,Jan Halvor Natlandsmyr,Head of Procurement,janatlandsmyr@equinor.com,No,HIGH,Stavanger,LinkedIn (from earlier research)
+Equinor,Anne Varhaug,Procurement Manager,anvarhaug@equinor.com,No,HIGH,Stavanger,LinkedIn (from earlier research)
+Equinor,Cecilie Tefre,Manager Procurement,cetefre@equinor.com,No,HIGH,Stavanger,LinkedIn (from earlier research)
+Aker BP,Johan Mohr,Head of Supply Chain - Yggdrasil & Safeguarding,johan.mohr@akerbp.com,No,TOP,Stavanger/Lysaker,LinkedIn
+Aker BP,Lars Petter Hoven,Contract and Procurement Manager Yggdrasil,lars.petter.hoven@akerbp.com,No,TOP,Stavanger,LinkedIn
+Aker BP,Jan Inge Selvik,Senior SCM Professional - Supply Chain Responsible Ula (electrical/instrument/valves expertise),jan.inge.selvik@akerbp.com,No,TOP,Stavanger,LinkedIn - instrument/valve specialist!
+Aker BP,Rikke Lill Rognstad,Supply Chain Responsible Edvard Grieg,rikke.lill.rognstad@akerbp.com,No,HIGH,Stavanger,LinkedIn
+Aker BP,Anne-Torunn Hetland Oanes,Senior Supply Chain Management Professional,anne-torunn.hetland.oanes@akerbp.com,No,HIGH,Rogaland,LinkedIn
+Aker BP,Camilla Dyskeland,Procurement Associate,camilla.dyskeland@akerbp.com,No,MEDIUM,Stavanger,LinkedIn
+Aker BP,Shahirah Abu Bakar,Tender Manager Contracts & Procurement,shahirah.abu.bakar@akerbp.com,No,MEDIUM,Stavanger,LinkedIn
+Vår Energi,Eva Fagernes,VP Supply Chain Management,eva.fagernes@varenergi.no,No,TOP,Sandnes,TheOrg - ex-CPO Neptune Energy
+Vår Energi,Kristian Bakkevig Valheim,Category Lead,kristian.bakkevig.valheim@varenergi.no,No,TOP,Sandnes,LinkedIn
+Vår Energi,Bjørn O. Kristensen,Procurement/Contract/Logistics/Supply Chain,bjorn.kristensen@varenergi.no,No,HIGH,Stavanger,LinkedIn
+Vår Energi,Winia Farida,Procurement (CIPS certified),winia.farida@varenergi.no,No,HIGH,Rogaland,LinkedIn
+Vår Energi,Laila Ertenstein,Procurement Economist,laila.ertenstein@varenergi.no,No,HIGH,Stavanger,LinkedIn
+Vår Energi,Atle Reinseth,VP Project Development & Supply Chain Management,atle.reinseth@varenergi.no,No,MEDIUM,Sandnes,varenergi.no org chart
+ConocoPhillips,Frode Flaaten,Metering Engineer Measurement & Allocation,frode.flaaten@conocophillips.com,Yes,HIGH,Tananger,Existing contact SP-00675
+ConocoPhillips,Øystein Fossaa,Engineer V-Cone/Test Separator,oeystein.fossaa@conocophillips.com,Yes,HIGH,Tananger,Existing contact SP-01408
+OKEA,Helge Hopmark,Procurement/Materials,helge.hopmark@okea.no,Yes,HIGH,Trondheim,Existing contact - prover balls
+OKEA,Elisabeth Sivertsen,Contract & Procurement / Supply Chain,elisabeth.sivertsen@okea.no,No,HIGH,Trondheim,LinkedIn
+Harbour Energy,Lynn McPherson,Procurement/Ordering,lynn.mcpherson@harbourenergy.com,Yes,TOP,Aberdeen,Active SP-01419
+Harbour Energy,Tracy Ritchie,Procurement Adviser,tracy.ritchie@harbourenergy.com,No,HIGH,Aberdeen,LinkedIn
+Harbour Energy,Ole Wiig,(Norway procurement/operations),ole.wiig@harbourenergy.com,No,MEDIUM,Norway,LinkedIn
+Harbour Energy,Marius Teigen,(Norway),marius.teigen@harbourenergy.com,No,MEDIUM,Norway,LinkedIn
+Gassco,Nina Ljønes,Engineer Metering/Operations,nina.ljones@gassco.no,No,HIGH,Karmøy,NFOGM presenter
+Gassco,Dag Arne Anensen,Principal Engineer,dag.arne.anensen@gassco.no,No,HIGH,Haugesund,LinkedIn
+Aibel,Øyvind Løland,Portfolio Procurement Manager,oyvind.loland@aibel.com,No,TOP,Stavanger,LinkedIn
+Aibel,Janne Thue Johannessen,Principal Purchaser,janne.thue.johannessen@aibel.com,No,TOP,Stavanger,LinkedIn
+Aibel,John Bjerknes,Kontrakts- og prosjektinnkjøper (PRB),john.bjerknes@aibel.com,No,TOP,Stavanger,LinkedIn
+Aibel,Tone Jacobsen,(Procurement),tone.jacobsen@aibel.com,No,HIGH,Stavanger,LinkedIn
+Aibel,Pål Berg,(Procurement),pal.berg@aibel.com,No,HIGH,Stavanger,LinkedIn
+Aibel,Steinar Sørnes,Mechanical Engineer Procurement & Operation,steinar.sornes@aibel.com,No,HIGH,Stavanger,LinkedIn
+Aibel,Navaneethan Murugiah,(SP-00690 PO - buyer),navaneethan.murugiah@aibel.com,Yes,HIGH,Stavanger,Existing contact
+Aibel,Sigrid Røynstrand Iversen,(SP-00690 PO - buyer),sigrid.roynstrand.iversen@aibel.com,Yes,HIGH,Stavanger,Existing contact
+Aibel,Frode Grønnestad,(Symra flow meter RFQ),frode.gronnestad@aibel.com,Yes,HIGH,Stavanger,Existing contact
+Aker Solutions,Merete Sæverud,Procurement Manager (instruments),merete.saeverud@akersolutions.com,No,TOP,Stavanger,LinkedIn
+Aker Solutions,Marit Haga Andersen,Procurement Manager / Package Responsible Buyer,marit.haga.andersen@akersolutions.com,No,TOP,Stavanger,LinkedIn
+Aker Solutions,Jan-Erik Hansen,Senior Buyer,jan-erik.hansen@akersolutions.com,No,TOP,Stavanger,LinkedIn
+Aker Solutions,Egil Eiken,Procurement Manager MMO,egil.eiken@akersolutions.com,No,TOP,Stavanger,LinkedIn
+Aker Solutions,Per Ohmar,Procurement Advisor,per.ohmar@akersolutions.com,No,HIGH,Stavanger,LinkedIn
+Aker Solutions,Zeljko Sedjak,Package Responsible Buyer (PRB),zeljko.sedjak@akersolutions.com,No,HIGH,Stavanger,LinkedIn
+Aker Solutions,Kjartan Brekke,(Procurement),kjartan.brekke@akersolutions.com,No,MEDIUM,Stavanger,LinkedIn
+Aker Solutions,Heath Lambert,Senior Buyer,heath.lambert@akersolutions.com,No,HIGH,Stavanger,LinkedIn
+Aker Solutions,Markus Brustad,(Procurement),markus.brustad@akersolutions.com,No,MEDIUM,Stavanger,LinkedIn
+Aker Solutions,Julian Kvisten,(Åsgard B close-out),julian.kvisten@akersolutions.com,Yes,MEDIUM,Stavanger,Existing contact
+Worley,Torill Gottfridson,Senior Packaged Buyer,torill.gottfridson@worley.com,No,TOP,Stavanger,LinkedIn
+Worley,Nils Arne Hatleskog,(Procurement/project),nils.arne.hatleskog@worley.com,No,HIGH,Stavanger,LinkedIn
+Worley,Tore T. Berg,(Procurement/Instrument),tore.berg@worley.com,Yes,HIGH,Stavanger,Existing (project 104352)
+Worley,Jan Willy Kristiansen,(Rosenberg Worley),jan.willy.kristiansen@worley.com,No,MEDIUM,Stavanger,LinkedIn
+Moreld Apply,Audun Sjøen,(PO 76465 / G23BC091),audun.sjoen@apply.no,Yes,HIGH,Stavanger,Existing contact
+Moreld Apply,Keith Hankin,(SP-00811),keith.hankin@apply.no,Yes,MEDIUM,Stavanger,Existing contact
+Moreld Apply,Jette Lind,(G23BC091 PO status),jette.lind@apply.no,Yes,MEDIUM,Stavanger,Existing contact
+Moreld Apply,Elin Walde Hodne,(Statfjord C Metering Skid),elin.walde.hodne@apply.no,Yes,HIGH,Stavanger,Metering skid project

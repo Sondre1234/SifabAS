@@ -1,0 +1,130 @@
+﻿Company,Name,Title,Email,Verified,Priority,Location,Note
+Equinor,Dag Flølo,Leading Engineer Fiscal Metering & Field Allocation (dept head),daflolo@equinor.com,No,TOP,Stavanger,Governs metering philosophy across all projects
+Equinor,Kjetil Haukalid,Principal Engineer Fiscal Metering,khhaukalid@equinor.com,No,TOP,Stavanger,Decision maker
+Equinor,Vegar Ingdal Hansen,Leading Advisor Fiscal/Multiphase Metering & Allocation,veihansen@equinor.com,No,TOP,Stavanger,ISO 17089 convenor - very senior
+Equinor,Øyvind Nesse,Specialist Metering,oynesse@equinor.com,No,TOP,Stavanger,
+Equinor,Nikolai Frøvik,Senior Engineer Fiscal Metering,nifrovik@equinor.com,No,HIGH,Stavanger,May have moved (was at Equinor Feb 2020-Feb 2022)
+Equinor,Eirik Åbro,Specialist Multiphase Metering,eiabro@equinor.com,No,HIGH,Stavanger,R&D patents MuFA
+Equinor,Mao Sheng,Leading Engineer Fiscal Metering,masheng@equinor.com,No,MEDIUM,UK (Milltimber),CEng FSEng
+Equinor,Karl Herman Frantzen,Principal Engineer Subsea Controls/Flow Metering,kafrantzen@equinor.com,No,MEDIUM,Stavanger,Subsea focus
+Equinor,Christian Hågenvik,Metering Engineer (GFMW 2024 speaker),chhagenvik@equinor.com,No,MEDIUM,Stavanger,Speed of Sound / Density paper
+Equinor,Dagfinn Mæland,Engineer Gas Metering,damaeland@equinor.com,No,MEDIUM,Stavanger,GFMW 2023 co-author
+Equinor,Olav Kristiansen,Principal Researcher Flow/Emissions Measurement,olkristiansen@equinor.com,No,MEDIUM,Stavanger,NeqSimLive tool
+Equinor,Audun Faanes,Researcher Multiphase Metering,aufaanes@equinor.com,No,MEDIUM,Stavanger,MuFA patent inventor
+Equinor,Therese Larsson Vedvik,NSFMW 2021 Technical Committee,thvedvik@equinor.com,No,LOW,Stavanger,
+Equinor,Fredrik Pettersen,Principal Engineer Automation,frpettersen@equinor.com,No,LOW,Stavanger,
+Equinor,Lars Werner,Certified Operator Automation & Fiscal Systems,lawerner@equinor.com,No,LOW,Draugen,Field operations
+Equinor,Dae-su Park,Instrument Field Engineer Johan Sverdrup,dapark@equinor.com,No,LOW,Stavanger,
+Equinor,Anders Lønning,Instrument Technician Johan Sverdrup,anlonning@equinor.com,No,LOW,Stavanger,
+Equinor,Jan Halvor Natlandsmyr,Head of Procurement,janatlandsmyr@equinor.com,No,HIGH,Stavanger,
+Equinor,Anne Varhaug,Procurement Manager,anvarhaug@equinor.com,No,HIGH,Stavanger,
+Equinor,Cecilie Tefre,Manager Procurement,cetefre@equinor.com,No,HIGH,Stavanger,
+Aker BP,Stig Fjetland,Senior Metering Engineer,stig.fjetland@akerbp.com,No,TOP,Stavanger,
+Aker BP,Pål Ystgaard,Metering Engineer (Technical Authority fiscal metering),pal.ystgaard@akerbp.com,No,TOP,Stavanger,May have moved to SINTEF
+Aker BP,Stig Harald Gustavsen,Metering (digitalization multiphase Valhall),stig.harald.gustavsen@akerbp.com,No,TOP,Stavanger,
+Aker BP,Kjetil Skretting,Instrument Metering,kjetil.skretting@akerbp.com,No,HIGH,Stavanger,
+Aker BP,Jarl Magne Mjølsnes,Specialist Instrument Engineer (Norsok/ATEX Valhall),jarl.magne.mjolsnes@akerbp.com,No,HIGH,Stavanger,20+ years experience
+Aker BP,Stig Arne Ekremsæter,Fagansvarlig Automasjon,stig.arne.ekremsaeter@akerbp.com,No,MEDIUM,Stavanger,
+Aker BP,Henning Eide,OPS AIP Valhall Asset,henning.eide@akerbp.com,No,MEDIUM,Stavanger,
+Aker BP,Bjørn Carlsen,Project Manager (ex-Instrument/E&I Discipline Lead),bjorn.carlsen@akerbp.com,No,MEDIUM,Stavanger,
+Aker BP,Geir Lerfall,Area Manager Valhall & Ula Modification Alliance,geir.lerfall@akerbp.com,No,MEDIUM,Stavanger,
+Aker BP,Leif-Rune Heng,Lead Engineer Telecom Systems Valhall,leif-rune.heng@akerbp.com,No,LOW,Stavanger,
+Vår Energi,Asle Hvidsten,Principal Metering Engineer (fiscal allocation GFMW TC),asle.hvidsten@varenergi.no,No,TOP,Sandnes,GFMW Technical Committee - direct decision maker
+Vår Energi,Torry Eriksen,Discipline Engineer Instrumentation & Metering,torry.eriksen@varenergi.no,No,TOP,Sandnes,ex-Eni Norge ex-Statoil
+Vår Energi,Torstein Vaaland,EICT Manager,torstein.vaaland@varenergi.no,No,TOP,Sandnes,Oversees entire I/E/T function
+Vår Energi,Roger Hansen,Sr. Instrument Engineer,roger.hansen@varenergi.no,No,HIGH,Hammerfest,Goliat
+Vår Energi,Frode Brakedal,System Engineer Instrument Commissioning,frode.brakedal@varenergi.no,No,HIGH,Sandnes,Neighbour!
+Vår Energi,Trond Wiik,Instrument Engineer Commissioning,trond.wiik@varenergi.no,No,MEDIUM,Sandnes,
+Vår Energi,Alan Narvestad,Commissioning Lead SAS/Instrument/Telecom Balder X,alan.narvestad@varenergi.no,No,MEDIUM,Sandnes,
+Vår Energi,Magnus Olsen,Maintenance Coordinator Instrument,magnus.olsen@varenergi.no,No,MEDIUM,Sandnes,
+Vår Energi,Carlos Pereira,Project Responsible Engineer (instrument/process control),carlos.pereira@varenergi.no,No,MEDIUM,Sandnes,
+Vår Energi,Claudia Almadori,Head of Procurement (board director),claudia.almadori@varenergi.no,No,HIGH,Sandnes,Commercial gatekeeper
+Vår Energi,Kjetil Fedde,Principal Engineer,kjetil.fedde@varenergi.no,No,LOW,Sandnes,Subsea background
+Vår Energi,George McInally,Subsea Manager (ex-Senior Fiscal Metering Engineer),george.mcinally@varenergi.no,No,MEDIUM,Sandnes,Metering background
+ConocoPhillips,Frode Flaaten,Metering Engineer Measurement & Allocation,frode.flaaten@conocophillips.com,Yes,TOP,Tananger,Existing contact SP-00675
+ConocoPhillips,Øystein Fossaa,Engineer V-Cone/Test Separator,oeystein.fossaa@conocophillips.com,Yes,HIGH,Tananger,Existing contact SP-01408. Ph: +47 52024168
+ConocoPhillips,Kjell-Are Eilertsen,Engineer Measurement,kjell-are.eilertsen@conocophillips.com,No,HIGH,Norway,Best new lead
+ConocoPhillips,Michael Clare,Instrument & Metering Supervisor,michael.clare@conocophillips.com,No,MEDIUM,UK (Teesside),
+ConocoPhillips,Andrew Slater,Instrument Field Specialist (fiscal metering),andrew.slater@conocophillips.com,No,MEDIUM,UK,
+ConocoPhillips,Michael Home,Measurement Engineer QMI,michael.home@conocophillips.com,No,MEDIUM,UK,
+ConocoPhillips,Simon Ward,Instrument Engineer,simon.ward@conocophillips.com,No,LOW,UK,
+OKEA,Helge Hopmark,Procurement/Materials (prover ball ordering),helge.hopmark@okea.no,Yes,HIGH,Trondheim,Existing contact
+OKEA,Daniel Kvalvik,Senior Automation Engineer Draugen,daniel.kvalvik@okea.no,No,HIGH,Kristiansund,Best new lead
+OKEA,Elisabeth Sivertsen,Contract & Procurement / Supply Chain,elisabeth.sivertsen@okea.no,No,HIGH,Trondheim,Procurement contact
+OKEA,Vidar Kristiansen,Electrical Engineer Projects,vidar.kristiansen@okea.no,No,MEDIUM,Trondheim,
+OKEA,Steinar Boge,Project Manager (ex-telecom/instrument),steinar.boge@okea.no,No,MEDIUM,Trondheim,
+OKEA,Bernt-Ole Knutsen,Operation Support Engineer,bernt-ole.knutsen@okea.no,No,LOW,Trondheim,
+Harbour Energy,Lynn McPherson,Procurement/Ordering,lynn.mcpherson@harbourenergy.com,Yes,TOP,Aberdeen,Active SP-01419
+Harbour Energy,Al Brindley,Engineering,al.brindley@harbourenergy.com,Yes,TOP,Aberdeen,Active FHNS
+Harbour Energy,Morag Cowie,PO Amendments,morag.cowie@harbourenergy.com,Yes,HIGH,Aberdeen,
+Harbour Energy,Anita Albriktsen,(Norway-based),anita.albriktsen@harbourenergy.com,No,MEDIUM,Norway,
+Harbour Energy,Nils Nikolai Havrevoll,Senior IMR Engineer,nils.nikolai.havrevoll@harbourenergy.com,No,HIGH,Rogaland,Norway-based
+Harbour Energy,Ole Hodnefjell,Lead Engineer D&W,ole.hodnefjell@harbourenergy.com,No,MEDIUM,Norway,
+Harbour Energy,Tracy Ritchie,Procurement Adviser,tracy.ritchie@harbourenergy.com,No,HIGH,Aberdeen,
+Harbour Energy,Bjørn-André Egerdahl,Subsea Engineering Advisor,bjorn-andre.egerdahl@harbourenergy.com,No,MEDIUM,Rogaland,
+Gassco,Nina Ljønes,Engineer Metering/Operations (NFOGM presenter),nina.ljones@gassco.no,No,TOP,Karmøy,Presented on fiscal metering operations
+Gassco,Dag Arne Anensen,Principal Engineer,dag.arne.anensen@gassco.no,No,HIGH,Haugesund,
+Gassco,James Dearing,Measurement Engineer,james.dearing@gassco.no,No,HIGH,Karmøy,
+Gassco,Frode Bjelland,NFOGM paper co-author,frode.bjelland@gassco.no,No,LOW,Karmøy,May have left
+Gassco,Gunter Buss,NFOGM paper co-author,gunter.buss@gassco.no,No,LOW,Karmøy,May have left
+Aker Solutions,Vetle Gjerver,Metering Engineer,vetle.gjerver@akersolutions.com,No,TOP,Stavanger,Dedicated metering role
+Aker Solutions,Pål Mathias Kjelsrud,Senior Metering Engineer,pal.mathias.kjelsrud@akersolutions.com,No,TOP,Stavanger,Flow meters transmitters
+Aker Solutions,Ole Kristian Våga,Specialist Engineer Metering (20+ projects),ole.kristian.vaga@akersolutions.com,No,TOP,Stavanger,
+Aker Solutions,Gunnar Pharo,PRE Instrument & Metering,gunnar.pharo@akersolutions.com,No,HIGH,Oslo,
+Aker Solutions,Palraj Acharya,Discipline Lead Sr PE Instrument (subsea EICT),palraj.acharya@akersolutions.com,No,HIGH,Stavanger,
+Aker Solutions,Inge Øvrehus,Senior Instrument Engineer (20+ yrs),inge.ovrehus@akersolutions.com,No,MEDIUM,Stavanger,
+Aker Solutions,Kåre Rosseid,Senior Instrument Engineer,kare.rosseid@akersolutions.com,No,MEDIUM,Stavanger,
+Aker Solutions,Victor H. Vasquez,Senior Instrument Engineer,victor.vasquez@akersolutions.com,No,MEDIUM,Stavanger,
+Aker Solutions,Carlos Briceno,Senior Instrument Engineer (36+ yrs metering),carlos.briceno@akersolutions.com,No,MEDIUM,Stavanger,
+Aker Solutions,Rohan Kaikini,Discipline Leader Instrument & Automation,rohan.kaikini@akersolutions.com,No,TOP,Stavanger,Specifies and procures instrumentation
+Aker Solutions,Joakim Hamstad,Discipline Lead,joakim.hamstad@akersolutions.com,No,MEDIUM,Stavanger,
+Aker Solutions,Merete Sæverud,Procurement Manager (instruments),merete.saeverud@akersolutions.com,No,HIGH,Stavanger,
+Aker Solutions,Marit Haga Andersen,Sr. Advisor Procurement (equipment packages),marit.haga.andersen@akersolutions.com,No,HIGH,Stavanger,
+Aker Solutions,Julian Kvisten,(Åsgard B close-out),julian.kvisten@akersolutions.com,Yes,MEDIUM,Stavanger,Existing contact
+Aker Solutions,Alex Plumb,(Mechanical ATEX),alex.plumb@akersolutions.com,Yes,LOW,Stavanger,Existing contact
+Aibel,Hilde Lien,Discipline Lead Instrument & Automation (Munin EPChc),hilde.lien@aibel.com,No,TOP,Stavanger,
+Aibel,David Wylie,Principal Instrument Engineer (Dagny FEED),david.wylie@aibel.com,No,HIGH,Stavanger,
+Aibel,Sven Ole Svensen,Principal Engineer Instrumentation,sven.ole.svensen@aibel.com,No,TOP,Stavanger,Senior technical authority
+Aibel,Atle Christensen,Senior Automation Engineer / Discipline Lead,atle.christensen@aibel.com,No,HIGH,Stavanger,
+Aibel,Kjetil Breivik,Senior Instrument Engineer,kjetil.breivik@aibel.com,No,MEDIUM,Stavanger,
+Aibel,Øyvind Løland,Portfolio Procurement Manager,oyvind.loland@aibel.com,No,HIGH,Stavanger,
+Aibel,Janne Thue Johannessen,Principal Purchaser,janne.thue.johannessen@aibel.com,No,HIGH,Stavanger,
+Aibel,Frode Grønnestad,(Symra flow meter RFQ),frode.gronnestad@aibel.com,Yes,HIGH,Stavanger,Existing contact
+Aibel,Paola Ortega,(Presentasjon Aibel),paola.ortega@aibel.com,Yes,MEDIUM,Stavanger,Existing contact
+Aibel,Svein Ole Bakken,(Presentasjon Aibel),svein.ole.bakken@aibel.com,Yes,MEDIUM,Stavanger,Existing contact
+Aibel,Navaneethan Murugiah,(SP-00690 PO - procurement),navaneethan.murugiah@aibel.com,Yes,HIGH,Stavanger,Existing contact
+Aibel,Sigrid Røynstrand Iversen,(SP-00690 PO - procurement),sigrid.roynstrand.iversen@aibel.com,Yes,HIGH,Stavanger,Existing contact
+Worley,Srividya Rajamani,Instrumentation Engineer (23+ yrs) Sandnes,srividya.rajamani@worley.com,No,HIGH,Sandnes,
+Worley,Stian Larsen,Group Lead (Piping E T I HVAC design),stian.larsen@worley.com,No,HIGH,Stavanger,
+Worley,Øyvind Nikolaisen,Senior Instrument Engineer,oyvind.nikolaisen@worley.com,No,MEDIUM,Stavanger,
+Worley,Torill Gottfridson,Senior Packaged Buyer Procurement,torill.gottfridson@worley.com,No,HIGH,Stavanger,
+Worley,Tore T. Berg,(Procurement/Instrument),tore.berg@worley.com,Yes,MEDIUM,Stavanger,Existing (project 104352)
+Worley,Hans Martin Brunvand,(Project),hans.martin.brunvand@worley.com,Yes,MEDIUM,Stavanger,Existing (project 104352)
+Worley,Ulrik Røyset,(Project),ulrik.royset@worley.com,Yes,MEDIUM,Stavanger,Existing (SP-01145/01169)
+Moreld Apply,Carlos Gamboa,Principal Instrument Engineer (27+ yrs custody transfer),carlos.gamboa@apply.no,No,TOP,Stavanger,HIGH VALUE
+Moreld Apply,Vanessa Salonga,Certified I&C Engineer (16+ yrs EPCM),vanessa.salonga@apply.no,No,HIGH,Stavanger,
+Moreld Apply,Angel Palacios,Instrument Engineer (Systems Integration),angel.palacios@apply.no,No,MEDIUM,Stavanger,
+Moreld Apply,Aniket Sable,Instrument Engineer,aniket.sable@apply.no,No,MEDIUM,Stavanger,
+Moreld Apply,Audun Sjøen,(PO 76465 / G23BC091),audun.sjoen@apply.no,Yes,MEDIUM,Stavanger,Existing contact
+Moreld Apply,Keith Hankin,(SP-00811),keith.hankin@apply.no,Yes,MEDIUM,Stavanger,Existing contact
+Moreld Apply,Roar Høydal,(SP-00811),roar.hoydal@apply.no,Yes,MEDIUM,Stavanger,Existing contact
+Moreld Apply,Samir Sakota,(Skid size thread),samir.sakota@apply.no,Yes,MEDIUM,Stavanger,Existing contact
+Moreld Apply,Jette Lind,(G23BC091 PO status),jette.lind@apply.no,Yes,MEDIUM,Stavanger,Existing contact
+Moreld Apply,Elin Walde Hodne,(Statfjord C Metering Skid JOB-17524),elin.walde.hodne@apply.no,Yes,HIGH,Stavanger,Metering skid project
+Equans/Fabricom,Philip Spang,Senior Instrument Engineer,philip.spang@equans.com,No,HIGH,Stavanger,
+Equans/Fabricom,Steinar Arctander,Offshore/FPSO Management,steinar.arctander@equans.com,No,MEDIUM,Stavanger,
+Guidant,Sverre Smemo,Managing Director Norway (Board Chair),sverre.smemo@guidantmeasurement.com,No,TOP,Kongsberg,Decision-maker in Norway
+Guidant,Torleif Espegard,Senior Tender Engineer,torleif.espegard@guidantmeasurement.com,Yes,HIGH,Kongsberg,Existing (SP-01415). Ph: +47 982 88 704
+Guidant,Oussama Tlili,Project Manager (25 yrs O&G metering),oussama.tlili@guidantmeasurement.com,No,TOP,Kongsberg,
+Guidant,Peshawa Aziz,Manager Aftermarket,peshawa.aziz@guidantmeasurement.com,No,HIGH,Kongsberg,Service/spares
+Guidant,Petter Lange,Project Engineer Instrument & Analyzers,petter.lange@guidantmeasurement.com,No,MEDIUM,Kongsberg,
+Guidant,Per Ole Gravningen,Project Manager,per.ole.gravningen@guidantmeasurement.com,No,MEDIUM,Kongsberg,
+Guidant,Gunnar Nilsen,Manager Operations,gunnar.nilsen@guidantmeasurement.com,No,MEDIUM,Drammen,Mongstad metering upgrade
+Guidant,Morten Marstein,Metering Specialist (25+ yrs GFMW TC),morten.marstein@guidantmeasurement.com,No,HIGH,Kongsberg,GFMW Technical Committee
+Guidant,Dallas Mabry,CEO,dallas.mabry@guidantmeasurement.com,No,LOW,Houston,Global
+Guidant,Peter Kalivoda,Global Sales Director,peter.kalivoda@guidantmeasurement.com,No,MEDIUM,Houston,For channel partner discussions
+Guidant,Stephan Frieds,General Manager,stephan.frieds@guidantmeasurement.com,No,LOW,Germany,
+NFOGM/Community,Irene Haugli,Project Manager / NFOGM Secretariat,Via Tekna,No,HIGH,Stavanger,Gatekeeper to metering community
+NFOGM/Community,Kjell-Eivind Frøysa,Professor / NFOGM Handbook Author,,No,MEDIUM,Bergen,HVL/NORCE - huge network
+NFOGM/Community,Per Lunde,Researcher / NFOGM Handbook Author,,No,LOW,Bergen,University of Bergen
+NFOGM/Community,Kjell-Rune Toftevåg,CTO XSENS Flow Solutions,,No,MEDIUM,,Potential partner - clamp-on meters
