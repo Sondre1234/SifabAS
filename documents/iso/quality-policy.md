@@ -2,12 +2,12 @@
 
 | Felt | Verdi |
 |------|-------|
-| **Dokumentnummer** | B.SI.01.02 |
+| **Dokumentnummer** | A.SI.02.01 |
 | **Tittel** | Kvalitetspolitikk (Quality Policy) |
-| **Revisjon** | 00 |
-| **Dato** | 2026-02-24 |
-| **Utarbeidet av** | ISO Document Producer Agent |
-| **Godkjent av** | *Avventer godkjenning — Tom Sverre Falch, Daglig leder* |
+| **Revisjon** | 05 |
+| **Dato** | 2026-07-09 |
+| **Utarbeidet av** | Sondre Falch |
+| **Godkjent av** | Tom Sverre Falch, Daglig leder |
 
 ---
 
@@ -19,7 +19,7 @@ Dette dokumentet fastsetter kvalitetspolitikken til Sifab AS i henhold til NS-EN
 
 ## 2. Omfang / Scope
 
-Kvalitetspolitikken gjelder for alle ansatte, avdelinger og aktiviteter i Sifab AS, inkludert alle prosjekter, tjenester og produkter som leveres fra selskapets lokaler i Bedriftsveien 24, 4313 Sandnes, og på kundens lokasjoner (offshore og onshore).
+Kvalitetspolitikken gjelder for alle ansatte, avdelinger og aktiviteter i Sifab AS, inkludert alle prosjekter, tjenester og produkter som leveres fra selskapets lokaler i Bedriftsveien 20, 4313 Sandnes, og hos kunder onshore. Sifab AS opererer ikke offshore — produktene Sifab leverer installeres senere av kunden ved både offshore- og onshore-installasjoner, men Sifabs eget personell utfører ikke arbeid offshore.
 
 ---
 
@@ -40,7 +40,7 @@ Kvalitetspolitikken gjelder for alle ansatte, avdelinger og aktiviteter i Sifab 
 >
 > **Standardetterlevelse**
 > - Sikre at alle leveranser er i henhold til Norsok-standarder, PED, TR 2000 og gjeldende norsk regelverk
-> - Opprettholde og videreutvikle vår kompetanse innen design, materialer, sveising, overflatebehandling og maskinering
+> - Sikre at design, materialer, sveising, overflatebehandling og maskinering utført ved vårt eget verksted i Sandnes — med personell leid inn fra kvalifiserte partnere som Ekke Hydraulics AS — oppfyller kravene til kvalitet og standard
 > - Overholde krav fra Petroleumstilsynet (PSA), Arbeidstilsynet, DSB og NPD/OD
 >
 > **Kontinuerlig forbedring**
@@ -77,7 +77,7 @@ Kvalitetspolitikken gjelder for alle ansatte, avdelinger og aktiviteter i Sifab 
 >
 > **Standards Compliance**
 > - Ensure all deliverables comply with Norsok standards, PED, TR 2000, and applicable Norwegian regulations
-> - Maintain and develop our competence in design, materials, welding, coating, and machining
+> - Ensure design, materials, welding, coating, and machining performed at our own Sandnes workshop — using personnel rented in from qualified partners such as Ekke Hydraulics AS — meet quality and standard requirements
 > - Comply with requirements from PSA, the Labour Inspection Authority, DSB, and NPD/OD
 >
 > **Continual Improvement**
@@ -114,7 +114,7 @@ Denne kvalitetspolitikken oppfyller følgende krav:
 
 | Krav (§5.2.2) | Oppfylt ved |
 |----------------|-------------|
-| a) Er tilgjengelig og vedlikeholdes som dokumentert informasjon | Dette dokumentet (B.SI.01.02) i KS-systemet |
+| a) Er tilgjengelig og vedlikeholdes som dokumentert informasjon | Dette dokumentet (A.SI.02.01) i KS-systemet |
 | b) Er kommunisert, forstått og anvendt i organisasjonen | Kommuniseres ved ansettelse, årlig gjennomgang, allmøter |
 | c) Er tilgjengelig for relevante interesseparter | Gjøres tilgjengelig på forespørsel |
 
@@ -135,8 +135,8 @@ Denne kvalitetspolitikken oppfyller følgende krav:
 
 | Dokument | Beskrivelse |
 |----------|-------------|
-| B.SI.01.01 | Kvalitetshåndbok (Quality Manual) |
-| B.SI.01.07 | Prosedyre for dokumenthåndtering |
+| A.SI.01.01 | HSEQ Handbook |
+| D.SI.06.01 | Prosedyre for dokumenthåndtering |
 | NS-EN ISO 9001:2015 §5.2 | Kvalitetspolitikk — krav |
 
 ---
@@ -145,4 +145,9 @@ Denne kvalitetspolitikken oppfyller følgende krav:
 
 | Rev. | Dato | Forfatter | Endringsbeskrivelse |
 |------|------|-----------|---------------------|
-| 00 | 2026-02-24 | ISO Document Producer Agent | Første utgave |
+| 00 | 2026-02-24 | Sifab AS | Første utgave |
+| 01 | 2026-07-09 | Sondre Falch | Dokumentnummer korrigert til A.SI.02.01; adresse oppdatert til Bedriftsveien 20; del av 2026 KS-revisjonen |
+| 02 | 2026-07-09 | Sondre Falch | Oppdatert omfangsbeskrivelse (Sifab AS opererer ikke offshore) |
+| 03 | 2026-07-13 | Sondre Falch | Oppdatert "Standardetterlevelse"-punktet (sveising, overflatebehandling og maskinering) |
+| 04 | 2026-07-13 | Sondre Falch | Oppdatert "Standardetterlevelse"-punktet — sveising, overflatebehandling og maskinering utføres ved eget verksted med innleid personell fra Ekke Hydraulics AS |
+| 05 | 2026-07-13 | Sondre Falch | Ferdigstilt for ISO 9001-resertifiseringsrevisjon |
